@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "facing=north,type=single": {
+      "model": "augmentatives:block/dark_oak/beam",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=down": {
+      "model": "augmentatives:block/dark_oak/beam_connector",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=east,type=single": {
+      "model": "augmentatives:block/dark_oak/beam",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=down": {
+      "model": "augmentatives:block/dark_oak/beam_connector",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=south,type=single": {
+      "model": "augmentatives:block/dark_oak/beam",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=down": {
+      "model": "augmentatives:block/dark_oak/beam_connector",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=west,type=single": {
+      "model": "augmentatives:block/dark_oak/beam",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=down": {
+      "model": "augmentatives:block/dark_oak/beam_connector",
+      "uvlock": true,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=north,type=single": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/single",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/left",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/right",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=middle": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/middle",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=corner_left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_left",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=north,type=corner_right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_right",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=east,type=single": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/single",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/left",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/right",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=middle": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/middle",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=corner_left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_left",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,type=corner_right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_right",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=south,type=single": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/single",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/left",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/right",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=middle": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/middle",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=corner_left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_left",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,type=corner_right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_right",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=west,type=single": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/single",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/left",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/right",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=middle": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/middle",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=corner_left": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_left",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,type=corner_right": {
+      "model": "augmentatives:block/dark_oak/outside_bench_back/corner_right",
+      "uvlock": true,
+      "y": 270
+    }
+  }
+}

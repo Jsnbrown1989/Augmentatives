@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "augmentatives",
+	"version": "${version}",
+	"name": "Augmentatives",
+	"description": "Augmentations to Minecraft",
+	"authors": [
+		"Jephon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/augmentatives/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jephon.augmentatives.Augmentatives"
+		],
+		"client": [
+			"net.jephon.augmentatives.AugmentativesClient"
+		],
+		"fabric-datagen": [
+			"net.jephon.augmentatives.AugmentativesDataGenerator"
+		]
+	},
+	"mixins": [
+      "augmentatives.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

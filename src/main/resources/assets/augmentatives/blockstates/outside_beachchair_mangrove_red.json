@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "augmentatives:block/outside/beachchair/mangrove/red",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "augmentatives:block/outside/beachchair/mangrove/red",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "augmentatives:block/outside/beachchair/mangrove/red",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "augmentatives:block/outside/beachchair/mangrove/red"
+    }
+  }
+}

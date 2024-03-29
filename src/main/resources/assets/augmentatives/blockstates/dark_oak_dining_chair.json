@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/dark_oak/dining_chair/chair",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/dark_oak/dining_chair/chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/dark_oak/dining_chair/chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/dark_oak/dining_chair/chair"
+    }
+  }
+}

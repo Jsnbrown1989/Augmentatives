@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/spruce/deepslate",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/spruce/deepslate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/spruce/deepslate",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/spruce/deepslate"
+    }
+  }
+}

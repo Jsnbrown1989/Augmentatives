@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [80, 16],
+	"textures": {
+		"0": "augmentatives:block/outside/copper-i-beams/dark_oak_drawer-Recovered.pngCopper-Beams",
+		"particle": "augmentatives:block/outside/copper-i-beams/dark_oak_drawer-Recovered.pngCopper-Beams"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 0],
+			"to": [15, 2, 16],
+			"faces": {
+				"north": {"uv": [7.6, 1, 10.4, 3], "texture": "#0"},
+				"east": {"uv": [7.6, 5, 10.8, 7], "texture": "#0"},
+				"south": {"uv": [7.6, 7, 10.4, 9], "texture": "#0"},
+				"west": {"uv": [7.6, 3, 10.8, 5], "texture": "#0"},
+				"up": {"uv": [4.4, 1, 7.6, 15], "texture": "#0"},
+				"down": {"uv": [1.2, 1, 4.4, 15], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 14, 0],
+			"to": [15, 16, 16],
+			"faces": {
+				"north": {"uv": [7.4, 1, 10.2, 3], "texture": "#0"},
+				"east": {"uv": [7.4, 3, 10.6, 5], "texture": "#0"},
+				"south": {"uv": [7.4, 7, 10.2, 9], "texture": "#0"},
+				"west": {"uv": [7.4, 5, 10.6, 7], "texture": "#0"},
+				"up": {"uv": [1, 1, 4.2, 15], "texture": "#0"},
+				"down": {"uv": [4.2, 1, 7.4, 15], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 2, 0],
+			"to": [9, 14, 16],
+			"faces": {
+				"north": {"uv": [9.4, 0, 9.8, 16], "texture": "#0"},
+				"east": {"uv": [1, 0, 4.2, 16], "texture": "#0"},
+				"south": {"uv": [10.8, 0, 11.2, 16], "texture": "#0"},
+				"west": {"uv": [4.2, 0, 7.4, 16], "texture": "#0"},
+				"up": {"uv": [11.4, 0, 11.8, 16], "texture": "#0"},
+				"down": {"uv": [10.2, 0, 10.6, 16], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

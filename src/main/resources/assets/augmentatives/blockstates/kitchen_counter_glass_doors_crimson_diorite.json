@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/crimson/diorite",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/crimson/diorite",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/crimson/diorite",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/kitchen/counter/glass_doors/crimson/diorite"
+    }
+  }
+}
