@@ -8,9 +8,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
-import net.jephon.augmentatives.block.decor.furniture.outside.AsphaltBlock;
-import net.jephon.augmentatives.block.decor.furniture.outside.BeachChairBlock;
-import net.jephon.augmentatives.block.decor.furniture.outside.StreetLightBlock;
+import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
@@ -547,10 +545,20 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_RED_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_red_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
+    public static final Block OUTSIDE_SIDEWALK = registerBlock("outside_sidewalk",
+            new SidewalkBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIDEWALK_SINGLE_WHITE = registerBlock("outside_sidewalk_single_white",
+            new SidewalkBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
     public static final Block OUTSIDE_STREETLIGHT = registerBlock("outside_streetlight",
-            new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_STOPSIGN = registerBlock("outside_stopsign",
-            new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+            new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_STOP = registerBlock("outside_sign_stop",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_SIGN_TOWN = registerBlock("outside_sign_town",
+            new TownSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
 
 
 

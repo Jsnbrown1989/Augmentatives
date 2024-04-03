@@ -20,7 +20,7 @@ import java.util.Optional;
         }
 
         public enum MultiBlockType implements StringIdentifiable {
-            OUTSIDE_STREETLIGHT("outside_streetlight"), OUTSIDE_STOPSIGN("outside_stopsign");
+            OUTSIDE_STREETLIGHT("outside_streetlight"), OUTSIDE_SIGN_STOP("outside_sign_stop");
 
             private final String id;
 
@@ -31,7 +31,7 @@ import java.util.Optional;
             public static Optional<MultiBlockType> getType(World world, BlockPos blockPos) {
                 BlockState blockState = world.getBlockState(blockPos);
                 if (blockState.isOf(ModBlocks.OUTSIDE_STREETLIGHT)) return Optional.of(OUTSIDE_STREETLIGHT);
-                else if (blockState.isOf(ModBlocks.OUTSIDE_STOPSIGN)) return Optional.of(OUTSIDE_STOPSIGN);
+                else if (blockState.isOf(ModBlocks.OUTSIDE_SIGN_STOP)) return Optional.of(OUTSIDE_SIGN_STOP);
                 return Optional.empty();
             }
 

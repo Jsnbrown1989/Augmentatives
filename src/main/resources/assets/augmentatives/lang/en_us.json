@@ -292,7 +292,12 @@
   "block.augmentatives.outside_asphalt_red_double_yellow": "Red Asphalt with a Double Yellow Line",
   "block.augmentatives.outside_asphalt_red_single_white_thick": "Red Asphalt with a Thick Single White Line",
 
+  "block.augmentatives.outside_sidewalk": "Sidewalk",
+  "block.augmentatives.outside_sidewalk_single_white": "Sidewalk with a Single White Line",
 
+  "block.augmentatives.outside_streetlight": "Streetlight",
+  "block.augmentatives.outside_sign_stop": "Stop Sign",
+  "block.augmentatives.outside_sign_town": "Town Sign",
 
   "itemGroup.decorationsAugmentatives": "Interior Decorations - Augmentatives",
   "itemGroup.decorationsAugmentatives": "Exterior Decorations - Augmentatives",

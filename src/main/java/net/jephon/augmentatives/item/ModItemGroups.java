@@ -260,6 +260,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_ASPHALT_RED);
 
                         entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
+                        entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
+                        entries.add(ModBlocks.OUTSIDE_SIDEWALK);
+                        entries.add(ModBlocks.OUTSIDE_SIDEWALK_SINGLE_WHITE);
 
 
 

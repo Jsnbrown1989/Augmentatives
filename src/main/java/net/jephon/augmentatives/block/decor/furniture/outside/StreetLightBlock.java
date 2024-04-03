@@ -26,10 +26,12 @@ import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 
+
 public class StreetLightBlock
         extends Block {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<MultiBlockUtil.MultiblockPart> PART = MultiBlockProperties.MULTIBLOCK_PART;
+
 
     @Override
     protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
@@ -74,7 +76,7 @@ public class StreetLightBlock
         Direction direction = placer == null ? Direction.NORTH : placer.getHorizontalFacing();
         world.setBlockState(pos, state.with(FACING, direction));
         placeAdditionalBlock(world, pos.offset(Direction.UP, 2), pos, direction, state, MultiBlockUtil.MultiblockPart.TOP);
-        }
+    }
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         BlockPos blockPos = pos.down();
@@ -84,41 +86,53 @@ public class StreetLightBlock
         }
         return blockState.isOf(this);
     }
+
+
     @Override
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!(world.isClient || !player.isCreative())) {
-            StreetLightBlock.onBreakInCreative(world, pos, state, player);
+        if (!world.isClient) {
+            if (player.isCreative()) {
+                StreetLightBlock.onBreakInCreative(world, pos, state, player);
+            } else {
+                BlockPos blockPos;
+                BlockState blockState;
+                MultiBlockUtil.MultiblockPart multiblockPart = state.get(PART);
+                if (multiblockPart == MultiBlockUtil.MultiblockPart.TOP && (blockState = world.getBlockState(blockPos = pos.offset(Direction.DOWN, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM) {
+                    BlockState blockState2 = Blocks.AIR.getDefaultState();
+                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+                    world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
+                } else if (multiblockPart == MultiBlockUtil.MultiblockPart.BOTTOM && (blockState = world.getBlockState(blockPos = pos.offset(Direction.UP, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.TOP) {
+                    BlockState blockState2 = Blocks.AIR.getDefaultState();
+                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+                    world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
+                }
+            }
         }
-        world.updateNeighbors(pos, Blocks.AIR);
         return super.onBreak(world, pos, state, player);
     }
     protected static void onBreakInCreative(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         BlockPos blockPos;
         BlockState blockState;
         MultiBlockUtil.MultiblockPart multiblockPart = state.get(PART);
-        if (multiblockPart == MultiBlockUtil.MultiblockPart.TOP && (blockState = world.getBlockState(blockPos = pos.down())).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.MID && blockState.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM) {
-            world.setBlockState(blockPos, blockState, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+        if (multiblockPart == MultiBlockUtil.MultiblockPart.TOP && (blockState = world.getBlockState(blockPos = pos.offset(Direction.DOWN, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM) {
+            BlockState blockState2 = Blocks.AIR.getDefaultState();
+            world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+            world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
+        } else if (multiblockPart == MultiBlockUtil.MultiblockPart.BOTTOM && (blockState = world.getBlockState(blockPos = pos.offset(Direction.UP, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.TOP) {
+            BlockState blockState2 = Blocks.AIR.getDefaultState();
+            world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
             world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
         }
     }
-    @Override
-    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
-        super.afterBreak(world, player, pos, Blocks.AIR.getDefaultState(), blockEntity, tool);
-    }
+
     private void placeAdditionalBlock(World world, BlockPos pos, BlockPos originPos, Direction direction, BlockState state, MultiBlockUtil.MultiblockPart part) {
         world.setBlockState(pos, ModBlocks.OUTSIDE_STREETLIGHT.getDefaultState().with(PART, part).with(FACING, direction));
         world.updateNeighbors(pos, Blocks.AIR);
         state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
     }
-    private void removeBlock(World world, BlockPos pos) {
-        world.setBlockState(pos, Blocks.AIR.getDefaultState(), NOTIFY_ALL);
-        world.updateNeighbors(pos, Blocks.AIR);
-        world.getBlockState(pos).updateNeighbors(world, pos, Block.NOTIFY_ALL);
-    }
-    @Override
+
+        @Override
     public long getRenderingSeed(BlockState state, BlockPos pos) {
         return MathHelper.hashCode(pos.getX(), pos.down(state.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM ? 0 : 1).getY(), pos.getZ());
     }
 }
-
-

@@ -6,9 +6,14 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.entity.ModBoats;
+import net.jephon.augmentatives.entity.SeatEntity;
+import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
+import net.minecraft.client.render.entity.EntityRenderer;
+import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.util.Identifier;
 
 public class AugmentativesClient implements ClientModInitializer {
     @Override
@@ -86,5 +91,19 @@ public class AugmentativesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_MANGROVE_DEEPSLATE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_WARPED_DEEPSLATE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_CRIMSON_DEEPSLATE, RenderLayer.getTranslucent());
+    }
+
+    private static class EmptyRenderer extends EntityRenderer<SeatEntity> {
+        protected EmptyRenderer(EntityRendererFactory.Context ctx) {
+            super(ctx);
+        }
+        @Override
+        public boolean shouldRender(SeatEntity entity, Frustum frustum, double d, double e, double f) {
+            return false;
+        }
+        @Override
+        public Identifier getTexture(SeatEntity entity) {
+            return null;
+        }
     }
 }
