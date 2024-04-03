@@ -3,7 +3,7 @@ package net.jephon.augmentatives.util;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.jephon.augmentatives.Augmentatives;
-import net.jephon.augmentatives.block.decor.furniture.ChairBlock;
+import net.jephon.augmentatives.block.common.ChairBlock;
 import net.jephon.augmentatives.entity.SeatEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityDimensions;

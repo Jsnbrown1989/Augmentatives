@@ -299,8 +299,8 @@
   "block.augmentatives.outside_sign_stop": "Stop Sign",
   "block.augmentatives.outside_sign_town": "Town Sign",
 
-  "itemGroup.decorationsAugmentatives": "Interior Decorations - Augmentatives",
-  "itemGroup.decorationsAugmentatives": "Exterior Decorations - Augmentatives",
+  "itemGroup.kitchenAugmentatives": "Kitchen Decor- Augmentatives",
+  "itemGroup.exteriorAugmentatives": "Exterior Decor - Augmentatives",
   "itemGroup.trafficAugmentatives": "Traffic - Augmentatives",
   "itemGroup.buildingblocksAugmentatives": "Building Blocks - Augmentatives"
 }

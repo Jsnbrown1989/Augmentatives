@@ -1,23 +1,22 @@
-package net.jephon.augmentatives.item;
+package net.jephon.augmentatives.block.decor.furniture.kitchen;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.ModBlocks;
+import net.jephon.augmentatives.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "ruby"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.decorationsAugmentatives"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+public class KitchenItemGroups {
+    public static final ItemGroup KITCHEN_COUNTER_DOORS_DARK_OAK_GRANITE_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Augmentatives.MOD_ID, "kitchen_counter_doors_dark_oak_granite"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.kitchenAugmentatives"))
+                    .icon(() -> new ItemStack(ModBlocks.KITCHEN_COUNTER_DOORS_DARK_OAK_GRANITE)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.COAL_BRIQUETTE);
 
 
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
@@ -222,48 +221,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KITCHEN_COUNTER_DRAWERS_CRIMSON_DEEPSLATE);
                         entries.add(ModBlocks.KITCHEN_COUNTER_DRAWERS_CRIMSON_TUFF);
                         entries.add(ModBlocks.KITCHEN_COUNTER_DRAWERS_CRIMSON_STONE);
-                        
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_OAK_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_BIRCH_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_JUNGLE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_ACACIA_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_SPRUCE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CHERRY_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_MANGROVE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED_RED);
-
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_DOUBLE_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_DOTTED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_DOTTED_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_DASHED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SINGLE_WHITE_THICK);
-
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_DOUBLE_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_DOTTED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_DOTTED_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_DASHED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN_SINGLE_WHITE_THICK);
-
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_DOUBLE_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_DOTTED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_DOTTED_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_DASHED_YELLOW);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED_SINGLE_WHITE_THICK);
-                        
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_ASPHALT);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_ASPHALT_GREEN);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_ASPHALT_RED);
-
-                        entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
-                        entries.add(ModBlocks.OUTSIDE_SIDEWALK);
-                        entries.add(ModBlocks.OUTSIDE_SIDEWALK_SINGLE_WHITE);
-
 
 
                     }).build());

@@ -1,4 +1,4 @@
-package net.jephon.augmentatives.block.decor.furniture;
+package net.jephon.augmentatives.block.common;
 
 import com.mojang.serialization.MapCodec;
 import net.jephon.augmentatives.entity.SeatEntity;

@@ -1,4 +1,4 @@
-package net.jephon.augmentatives.block.decor.furniture.outside;
+package net.jephon.augmentatives.block.decor.traffic;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;

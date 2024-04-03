@@ -11,7 +11,12 @@ public class ModBlockTags {
     public static final TagKey<Block> BAR_CHAIRS = create("bar_chairs");
     public static final TagKey<Block> SEATS = create("seats");
 
-        private static TagKey<Block> create(String path) {
+    public static final TagKey<Block> COUNTERS = create("counters");
+
+    public static final TagKey<Block> COUNTER_GLASS_DOORS = create("counter_glass_doors");
+    public static final TagKey<Block> COUNTER_DOORS = create("counter_glass_doors");
+    public static final TagKey<Block> COUNTER_DRAWERS = create("counter_glass_doors");
+    private static TagKey<Block> create(String path) {
             return create(path, "augmentatives");
     }
     private static TagKey<Block> create(String path, String namespace) {

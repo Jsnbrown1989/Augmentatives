@@ -1,13 +1,10 @@
-package net.jephon.augmentatives.block.decor.furniture.outside;
+package net.jephon.augmentatives.block.decor.traffic;
 
 import com.mojang.serialization.MapCodec;
 import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.util.MultiBlockProperties;
 import net.jephon.augmentatives.util.MultiBlockUtil;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -26,7 +23,8 @@ import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 
-public class StopSignBlock
+
+public class StreetLightBlock
         extends Block {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<MultiBlockUtil.MultiblockPart> PART = MultiBlockProperties.MULTIBLOCK_PART;
@@ -36,7 +34,7 @@ public class StopSignBlock
     protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
         return null;
     }
-    public StopSignBlock(Settings settings) {
+    public StreetLightBlock(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH).with(PART, MultiBlockUtil.MultiblockPart.HEAD));
     }
@@ -91,7 +89,7 @@ public class StopSignBlock
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (!world.isClient) {
             if (player.isCreative()) {
-                StopSignBlock.onBreakInCreative(world, pos, state, player);
+                StreetLightBlock.onBreakInCreative(world, pos, state, player);
             } else {
                 BlockPos blockPos;
                 BlockState blockState;
@@ -125,7 +123,7 @@ public class StopSignBlock
     }
 
     private void placeAdditionalBlock(World world, BlockPos pos, BlockPos originPos, Direction direction, BlockState state, MultiBlockUtil.MultiblockPart part) {
-        world.setBlockState(pos, ModBlocks.OUTSIDE_SIGN_STOP.getDefaultState().with(PART, part).with(FACING, direction));
+        world.setBlockState(pos, ModBlocks.OUTSIDE_STREETLIGHT.getDefaultState().with(PART, part).with(FACING, direction));
         world.updateNeighbors(pos, Blocks.AIR);
         state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
     }

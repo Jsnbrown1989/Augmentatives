@@ -32,8 +32,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
         ;
 
-        //CROPS
-        getOrCreateTagBuilder(BlockTags.CROPS)
+        //COUNTERS WITH GLASS DOORS
+        getOrCreateTagBuilder(ModBlockTags.COUNTER_GLASS_DOORS)
+        ;
+
+        //COUNTERS WITH WOOD DOORS
+        getOrCreateTagBuilder(ModBlockTags.COUNTER_DOORS)
+        ;
+
+        //COUNTERS WITH WOOD DRAWERS
+        getOrCreateTagBuilder(ModBlockTags.COUNTER_DRAWERS)
         ;
 
         //BAR CHAIRS
@@ -57,6 +65,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModBlockTags.SEATS)
                 .forceAddTag(ModBlockTags.BAR_CHAIRS)
                 .forceAddTag(ModBlockTags.BEACH_CHAIRS)
+        ;
+        //COUNTERS
+        getOrCreateTagBuilder(ModBlockTags.COUNTERS)
+                .forceAddTag(ModBlockTags.COUNTER_GLASS_DOORS)
+                .forceAddTag(ModBlockTags.COUNTER_DOORS)
+                .forceAddTag(ModBlockTags.COUNTER_DRAWERS)
         ;
     }
 }
