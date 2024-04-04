@@ -1,5 +1,6 @@
 package net.jephon.augmentatives.block.decor.furniture.outside;
 
+
 import net.jephon.augmentatives.block.common.ChairBlock;
 import net.jephon.augmentatives.util.BeachChairPosition;
 import net.jephon.augmentatives.util.Colorizer;
@@ -7,13 +8,14 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.CampfireBlockEntity;
 import net.minecraft.block.enums.BedPart;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.RecipeEntry;
@@ -24,7 +26,9 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -39,6 +43,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+import static net.jephon.augmentatives.util.Colorizer.*;
+
 
 public class BeachChairBlock
 extends ChairBlock {
@@ -48,18 +54,153 @@ extends ChairBlock {
 
     }
     public static final EnumProperty<BeachChairPosition> POSITION= EnumProperty.of("position", BeachChairPosition.class);
-    public static final EnumProperty<Colorizer> COLOR = EnumProperty.of("color", Colorizer.class);
+    public static final EnumProperty<Colorizer> COLOR= EnumProperty.of("color", Colorizer.class);
+
     protected static final VoxelShape BEACH_CHAIR_SHAPE = VoxelShapes.union(
             Block.createCuboidShape(2, 0, 2, 14, 8, 14)
     );
-    @Override
+
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!player.getAbilities().allowModifyWorld) {
+        boolean sneakingEmptyHand = player.getStackInHand(hand).isEmpty() && player.isSneaking();
+        boolean sneakingDyeHand = player.getStackInHand(hand).getItem() instanceof DyeItem && player.isSneaking();
+        ItemStack item = player.getStackInHand(hand).getItem().getDefaultStack();
+        Colorizer red = RED;
+        Colorizer blue = BLUE;
+        Colorizer black = BLACK;
+        Colorizer brown = BROWN;
+        Colorizer cyan = CYAN;
+        Colorizer gray = GRAY;
+        Colorizer light_gray = LIGHT_GRAY;
+        Colorizer light_blue = LIGHT_BLUE;
+        Colorizer green = GREEN;
+        Colorizer lime = LIME;
+        Colorizer magenta = MAGENTA;
+        Colorizer orange = ORANGE;
+        Colorizer purple = PURPLE;
+        Colorizer white = WHITE;
+        Colorizer yellow = YELLOW;
+        Colorizer pink = PINK;
+        if (sneakingDyeHand) {
+            if (item.isOf(Items.RED_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, red), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.MAGENTA_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, magenta), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.BLACK_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, black), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.BROWN_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, brown), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.BLUE_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, blue), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.CYAN_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, cyan), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.GRAY_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, gray), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.LIGHT_GRAY_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, light_gray), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.LIGHT_BLUE_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, light_blue), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.GREEN_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, green), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.LIME_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, lime), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.ORANGE_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, orange), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.PURPLE_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, purple), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.WHITE_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, white), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.YELLOW_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, yellow), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            else if (item.isOf(Items.PINK_DYE)){
+                if (!player.getAbilities().allowModifyWorld) {
+                    return ActionResult.PASS;
+                }
+                world.setBlockState(pos, (BlockState)state.with(COLOR, pink), Block.NOTIFY_ALL);
+                return ActionResult.success(world.isClient);
+            }
+            return ActionResult.CONSUME;
+        } else if(sneakingEmptyHand){
             return ActionResult.PASS;
         }
         world.setBlockState(pos, (BlockState)state.cycle(POSITION), Block.NOTIFY_ALL);
         return ActionResult.success(world.isClient);
     }
+
 
     private void bounceEntity(Entity entity) {
         Vec3d vec3d = entity.getVelocity();
