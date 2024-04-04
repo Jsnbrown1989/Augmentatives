@@ -50,16 +50,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         //BEACH CHAIRS
         getOrCreateTagBuilder(ModBlockTags.BEACH_CHAIRS)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_ACACIA_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_OAK_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_BIRCH_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_SPRUCE_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_CHERRY_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_MANGROVE_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_JUNGLE_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED_RED)
-                .add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON_RED)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_ACACIA)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_OAK)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_BIRCH)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_SPRUCE)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_CHERRY)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_MANGROVE)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_JUNGLE)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED)
+                .add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON)
         ;
         //SEATS
         getOrCreateTagBuilder(ModBlockTags.SEATS)

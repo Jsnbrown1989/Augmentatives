@@ -472,26 +472,35 @@ public class ModBlocks {
 
 
 
-    public static final Block OUTSIDE_BEACHCHAIR_DARK_OAK_RED = registerBlock("outside_beachchair_dark_oak_red",
+    public static final Block OUTSIDE_BEACHCHAIR_DARK_OAK = registerBlock("outside_beachchair_dark_oak",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_OAK_RED = registerBlock("outside_beachchair_oak_red",
+    public static final Block OUTSIDE_BEACHCHAIR_OAK = registerBlock("outside_beachchair_oak",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_SPRUCE_RED = registerBlock("outside_beachchair_spruce_red",
+    public static final Block OUTSIDE_BEACHCHAIR_SPRUCE = registerBlock("outside_beachchair_spruce",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_BIRCH_RED = registerBlock("outside_beachchair_birch_red",
+    public static final Block OUTSIDE_BEACHCHAIR_BIRCH = registerBlock("outside_beachchair_birch",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_JUNGLE_RED = registerBlock("outside_beachchair_jungle_red",
+    public static final Block OUTSIDE_BEACHCHAIR_JUNGLE = registerBlock("outside_beachchair_jungle",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_CHERRY_RED = registerBlock("outside_beachchair_cherry_red",
+    public static final Block OUTSIDE_BEACHCHAIR_CHERRY = registerBlock("outside_beachchair_cherry",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_ACACIA_RED = registerBlock("outside_beachchair_acacia_red",
+    public static final Block OUTSIDE_BEACHCHAIR_ACACIA = registerBlock("outside_beachchair_acacia",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_MANGROVE_RED = registerBlock("outside_beachchair_mangrove_red",
+    public static final Block OUTSIDE_BEACHCHAIR_MANGROVE = registerBlock("outside_beachchair_mangrove",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_WARPED_RED = registerBlock("outside_beachchair_warped_red",
+    public static final Block OUTSIDE_BEACHCHAIR_WARPED = registerBlock("outside_beachchair_warped",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_BEACHCHAIR_CRIMSON_RED = registerBlock("outside_beachchair_crimson_red",
+    public static final Block OUTSIDE_BEACHCHAIR_CRIMSON = registerBlock("outside_beachchair_crimson",
             new BeachChairBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
+
+
+
+
+
+
 
 
     public static final Block OUTSIDE_ASPHALT_ASPHALT = registerBlock("outside_asphalt_asphalt",

@@ -29,12 +29,10 @@ import java.util.List;
 import static net.jephon.augmentatives.entity.SeatEntity.OCCUPIED;
 
 public class ChairBlock extends HorizontalFacingBlock implements Waterloggable{
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     public static final DirectionProperty HORIZONTAL_FACING = Properties.HORIZONTAL_FACING;
 
     public ChairBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)(this.stateManager.getDefaultState()).with(WATERLOGGED, false));
     }
 
     @Override
@@ -44,7 +42,7 @@ public class ChairBlock extends HorizontalFacingBlock implements Waterloggable{
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
-        stateManager.add(HORIZONTAL_FACING, WATERLOGGED);
+        stateManager.add(HORIZONTAL_FACING);
     }
 
     @Override
@@ -52,35 +50,9 @@ public class ChairBlock extends HorizontalFacingBlock implements Waterloggable{
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockPos blockPos;
         World worldAccess = ctx.getWorld();
-        boolean bl = worldAccess.getFluidState(blockPos = ctx.getBlockPos()).getFluid() == Fluids.WATER;
-        return (BlockState)this.getDefaultState().with(WATERLOGGED, bl).with(HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        return (BlockState)this.getDefaultState().with(HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
-    @Override
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        if (state.get(WATERLOGGED)) {
-            world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
-        }
-        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-    }
-    @Override
-    public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluidState) {
-        if (!state.get(Properties.WATERLOGGED) && fluidState.getFluid() == Fluids.WATER) {
-
-            world.setBlockState(pos, (BlockState)((BlockState)state.with(WATERLOGGED, true)), Block.NOTIFY_ALL);
-            world.scheduleFluidTick(pos, fluidState.getFluid(), fluidState.getFluid().getTickRate(world));
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public FluidState getFluidState(BlockState state) {
-        if (state.get(WATERLOGGED)) {
-            return Fluids.WATER.getStill(false);
-        }
-        return super.getFluidState(state);
-    }
 
     @Override
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {

@@ -4,9 +4,11 @@ import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.entity.ModBoats;
 import net.jephon.augmentatives.entity.SeatEntity;
+import net.jephon.augmentatives.util.ModSit;
 import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
@@ -18,7 +20,7 @@ import net.minecraft.util.Identifier;
 public class AugmentativesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-
+        EntityRendererRegistry.register(ModSit.SEAT, EmptyRenderer::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DAHLIA, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_DAHLIA, RenderLayer.getCutout());

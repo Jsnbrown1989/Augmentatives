@@ -15,18 +15,18 @@ public class OutsideItemGroups {
     public static final ItemGroup OUTSIDE_BEACHCHAIR_DARK_OAK_RED_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Augmentatives.MOD_ID, "outside_beachchair_dark_oak_red"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.exteriorAugmentatives"))
-                    .icon(() -> new ItemStack(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK_RED)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK)).entries((displayContext, entries) -> {
 
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_OAK_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_BIRCH_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_JUNGLE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_ACACIA_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_SPRUCE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CHERRY_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_MANGROVE_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON_RED);
-                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED_RED);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_OAK);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_MANGROVE);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON);
+                        entries.add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED);
                     }).build());
     public static void registerItemGroups() {
         Augmentatives.LOGGER.info("Registering Item Groups for " + Augmentatives.MOD_ID);

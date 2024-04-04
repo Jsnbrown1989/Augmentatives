@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.block.decor.furniture.outside.OutsideItemGroups;
+import net.jephon.augmentatives.block.decor.traffic.TrafficItemGroups;
 import net.jephon.augmentatives.entity.ModBoats;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.KitchenItemGroups;
 import net.jephon.augmentatives.item.ModItems;
@@ -20,7 +21,7 @@ public class Augmentatives implements ModInitializer {
 	public void onInitialize() {
 		KitchenItemGroups.registerItemGroups();
 		OutsideItemGroups.registerItemGroups();
-		KitchenItemGroups.registerItemGroups();
+		TrafficItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

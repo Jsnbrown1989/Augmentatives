@@ -62,7 +62,7 @@ public class ModSit {
 
                 // BEACH CHAIR
                 if (notSneakingEmptyHand && state.isIn(ModBlockTags.BEACH_CHAIRS)) {
-                    return spawnSeat(world, player, state, hitResult.getBlockPos(), 0.175f, comparePos);
+                    return spawnSeat(world, player, state, hitResult.getBlockPos(), 0.5f, comparePos);
                 }
 
                 // BAR CHAIR

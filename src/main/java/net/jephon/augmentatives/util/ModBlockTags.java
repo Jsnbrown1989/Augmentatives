@@ -10,9 +10,7 @@ public class ModBlockTags {
     public static final TagKey<Block> BEACH_CHAIRS = create("beach_chairs");
     public static final TagKey<Block> BAR_CHAIRS = create("bar_chairs");
     public static final TagKey<Block> SEATS = create("seats");
-
     public static final TagKey<Block> COUNTERS = create("counters");
-
     public static final TagKey<Block> COUNTER_GLASS_DOORS = create("counter_glass_doors");
     public static final TagKey<Block> COUNTER_DOORS = create("counter_glass_doors");
     public static final TagKey<Block> COUNTER_DRAWERS = create("counter_glass_doors");
