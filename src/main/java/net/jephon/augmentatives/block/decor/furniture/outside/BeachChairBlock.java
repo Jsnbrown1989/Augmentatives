@@ -5,28 +5,16 @@ import net.jephon.augmentatives.block.common.ChairBlock;
 import net.jephon.augmentatives.util.BeachChairPosition;
 import net.jephon.augmentatives.util.Colorizer;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.CampfireBlockEntity;
-import net.minecraft.block.enums.BedPart;
-import net.minecraft.client.MinecraftClient;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.fluid.Fluids;
+
 import net.minecraft.item.*;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.recipe.CampfireCookingRecipe;
-import net.minecraft.recipe.RecipeEntry;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
+
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
+
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
@@ -61,8 +49,8 @@ extends ChairBlock {
     );
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean sneakingEmptyHand = player.getStackInHand(hand).isEmpty() && player.isSneaking();
-        boolean sneakingDyeHand = player.getStackInHand(hand).getItem() instanceof DyeItem && player.isSneaking();
+        boolean SneakingEmptyHand = player.getStackInHand(hand).isEmpty() && !player.isSneaking();
+        boolean notSneakingDyeHand = player.getStackInHand(hand).getItem() instanceof DyeItem && !player.isSneaking();
         ItemStack item = player.getStackInHand(hand).getItem().getDefaultStack();
         Colorizer red = RED;
         Colorizer blue = BLUE;
@@ -80,7 +68,7 @@ extends ChairBlock {
         Colorizer white = WHITE;
         Colorizer yellow = YELLOW;
         Colorizer pink = PINK;
-        if (sneakingDyeHand) {
+        if (notSneakingDyeHand) {
             if (item.isOf(Items.RED_DYE)){
                 if (!player.getAbilities().allowModifyWorld) {
                     return ActionResult.PASS;
@@ -194,7 +182,7 @@ extends ChairBlock {
                 return ActionResult.success(world.isClient);
             }
             return ActionResult.CONSUME;
-        } else if(sneakingEmptyHand){
+        } else if(SneakingEmptyHand){
             return ActionResult.PASS;
         }
         world.setBlockState(pos, (BlockState)state.cycle(POSITION), Block.NOTIFY_ALL);

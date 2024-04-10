@@ -12,8 +12,9 @@ public class ModBlockTags {
     public static final TagKey<Block> SEATS = create("seats");
     public static final TagKey<Block> COUNTERS = create("counters");
     public static final TagKey<Block> COUNTER_GLASS_DOORS = create("counter_glass_doors");
-    public static final TagKey<Block> COUNTER_DOORS = create("counter_glass_doors");
-    public static final TagKey<Block> COUNTER_DRAWERS = create("counter_glass_doors");
+    public static final TagKey<Block> COUNTER_DOORS = create("counter_doors");
+    public static final TagKey<Block> COUNTER_DRAWERS = create("counter_drawers");
+    public static final TagKey<Block> GUARDRAILS = create("guardrails");
     private static TagKey<Block> create(String path) {
             return create(path, "augmentatives");
     }

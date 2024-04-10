@@ -61,6 +61,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OUTSIDE_BEACHCHAIR_WARPED)
                 .add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON)
         ;
+
+        //GUARDRAILS
+        getOrCreateTagBuilder(ModBlockTags.GUARDRAILS)
+        ;
+
+
         //SEATS
         getOrCreateTagBuilder(ModBlockTags.SEATS)
                 .forceAddTag(ModBlockTags.BAR_CHAIRS)

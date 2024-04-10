@@ -1,19 +1,724 @@
 {
   "variants": {
-    "facing=west": {
+    "facing=west,position=standard,color=red": {
       "model": "augmentatives:block/outside/beachchair/spruce/red",
       "y": 270
     },
-    "facing=south": {
+    "facing=south,position=standard,color=red": {
       "model": "augmentatives:block/outside/beachchair/spruce/red",
       "y": 180
     },
-    "facing=east": {
+    "facing=east,position=standard,color=red": {
       "model": "augmentatives:block/outside/beachchair/spruce/red",
       "y": 90
     },
-    "facing=north": {
+    "facing=north,position=standard,color=red": {
       "model": "augmentatives:block/outside/beachchair/spruce/red"
+    },
+    "facing=west,position=up,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_up"
+    },
+    "facing=west,position=down,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=red": {
+      "model": "augmentatives:block/outside/beachchair/spruce/red_down"
+    },
+    "facing=west,position=standard,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black",
+      "y": 270
+    },
+    "facing=south,position=standard,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black",
+      "y": 180
+    },
+    "facing=east,position=standard,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black",
+      "y": 90
+    },
+    "facing=north,position=standard,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black"
+    },
+    "facing=west,position=up,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_up"
+    },
+    "facing=west,position=down,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/black_down"
+    },
+    "facing=west,position=standard,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown",
+      "y": 270
+    },
+    "facing=south,position=standard,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown",
+      "y": 180
+    },
+    "facing=east,position=standard,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown",
+      "y": 90
+    },
+    "facing=north,position=standard,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown"
+    },
+    "facing=west,position=up,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_up"
+    },
+    "facing=west,position=down,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=brown": {
+      "model": "augmentatives:block/outside/beachchair/spruce/brown_down"
+    },
+    "facing=west,position=standard,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue",
+      "y": 270
+    },
+    "facing=south,position=standard,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue",
+      "y": 180
+    },
+    "facing=east,position=standard,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue",
+      "y": 90
+    },
+    "facing=north,position=standard,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue"
+    },
+    "facing=west,position=up,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_up"
+    },
+    "facing=west,position=down,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=blue": {
+      "model": "augmentatives:block/outside/beachchair/spruce/blue_down"
+    },
+    "facing=west,position=standard,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan",
+      "y": 270
+    },
+    "facing=south,position=standard,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan",
+      "y": 180
+    },
+    "facing=east,position=standard,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan",
+      "y": 90
+    },
+    "facing=north,position=standard,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan"
+    },
+    "facing=west,position=up,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_up"
+    },
+    "facing=west,position=down,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=cyan": {
+      "model": "augmentatives:block/outside/beachchair/spruce/cyan_down"
+    },
+    "facing=west,position=standard,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta",
+      "y": 270
+    },
+    "facing=south,position=standard,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta",
+      "y": 180
+    },
+    "facing=east,position=standard,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta",
+      "y": 90
+    },
+    "facing=north,position=standard,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta"
+    },
+    "facing=west,position=up,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_up"
+    },
+    "facing=west,position=down,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=magenta": {
+      "model": "augmentatives:block/outside/beachchair/spruce/magenta_down"
+    },
+    "facing=west,position=standard,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink",
+      "y": 270
+    },
+    "facing=south,position=standard,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink",
+      "y": 180
+    },
+    "facing=east,position=standard,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink",
+      "y": 90
+    },
+    "facing=north,position=standard,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink"
+    },
+    "facing=west,position=up,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_up"
+    },
+    "facing=west,position=down,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=pink": {
+      "model": "augmentatives:block/outside/beachchair/spruce/pink_down"
+    },
+    "facing=west,position=standard,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple",
+      "y": 270
+    },
+    "facing=south,position=standard,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple",
+      "y": 180
+    },
+    "facing=east,position=standard,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple",
+      "y": 90
+    },
+    "facing=north,position=standard,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple"
+    },
+    "facing=west,position=up,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_up"
+    },
+    "facing=west,position=down,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=purple": {
+      "model": "augmentatives:block/outside/beachchair/spruce/purple_down"
+    },
+    "facing=west,position=standard,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black",
+      "y": 270
+    },
+    "facing=south,position=standard,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black",
+      "y": 180
+    },
+    "facing=east,position=standard,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black",
+      "y": 90
+    },
+    "facing=north,position=standard,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black"
+    },
+    "facing=west,position=up,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_up"
+    },
+    "facing=west,position=down,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=light_black": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_black_down"
+    },
+    "facing=west,position=standard,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray",
+      "y": 270
+    },
+    "facing=south,position=standard,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray",
+      "y": 180
+    },
+    "facing=east,position=standard,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray",
+      "y": 90
+    },
+    "facing=north,position=standard,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray"
+    },
+    "facing=west,position=up,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_up"
+    },
+    "facing=west,position=down,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=light_gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/light_gray_down"
+    },
+    "facing=west,position=standard,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray",
+      "y": 270
+    },
+    "facing=south,position=standard,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray",
+      "y": 180
+    },
+    "facing=east,position=standard,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray",
+      "y": 90
+    },
+    "facing=north,position=standard,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray"
+    },
+    "facing=west,position=up,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_up"
+    },
+    "facing=west,position=down,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=gray": {
+      "model": "augmentatives:block/outside/beachchair/spruce/gray_down"
+    },
+    "facing=west,position=standard,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime",
+      "y": 270
+    },
+    "facing=south,position=standard,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime",
+      "y": 180
+    },
+    "facing=east,position=standard,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime",
+      "y": 90
+    },
+    "facing=north,position=standard,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime"
+    },
+    "facing=west,position=up,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_up"
+    },
+    "facing=west,position=down,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=lime": {
+      "model": "augmentatives:block/outside/beachchair/spruce/lime_down"
+    },
+    "facing=west,position=standard,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white",
+      "y": 270
+    },
+    "facing=south,position=standard,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white",
+      "y": 180
+    },
+    "facing=east,position=standard,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white",
+      "y": 90
+    },
+    "facing=north,position=standard,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white"
+    },
+    "facing=west,position=up,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_up"
+    },
+    "facing=west,position=down,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=white": {
+      "model": "augmentatives:block/outside/beachchair/spruce/white_down"
+    },
+    "facing=west,position=standard,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow",
+      "y": 270
+    },
+    "facing=south,position=standard,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow",
+      "y": 180
+    },
+    "facing=east,position=standard,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow",
+      "y": 90
+    },
+    "facing=north,position=standard,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow"
+    },
+    "facing=west,position=up,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up"
+    },
+    "facing=west,position=down,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=yellow": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down"
+    },
+    "facing=west,position=standard,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/orange",
+      "y": 270
+    },
+    "facing=south,position=standard,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/orange",
+      "y": 180
+    },
+    "facing=east,position=standard,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/orange",
+      "y": 90
+    },
+    "facing=north,position=standard,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/orange"
+    },
+    "facing=west,position=up,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up"
+    },
+    "facing=west,position=down,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=orange": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down"
+    },
+    "facing=west,position=standard,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/green",
+      "y": 270
+    },
+    "facing=south,position=standard,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/green",
+      "y": 180
+    },
+    "facing=east,position=standard,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/green",
+      "y": 90
+    },
+    "facing=north,position=standard,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/green"
+    },
+    "facing=west,position=up,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 270
+    },
+    "facing=south,position=up,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 180
+    },
+    "facing=east,position=up,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up",
+      "y": 90
+    },
+    "facing=north,position=up,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_up"
+    },
+    "facing=west,position=down,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 270
+    },
+    "facing=south,position=down,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 180
+    },
+    "facing=east,position=down,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down",
+      "y": 90
+    },
+    "facing=north,position=down,color=green": {
+      "model": "augmentatives:block/outside/beachchair/spruce/yellow_down"
     }
   }
 }

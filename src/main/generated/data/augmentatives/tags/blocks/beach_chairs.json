@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "augmentatives:outside_beachchair_acacia_red",
-    "augmentatives:outside_beachchair_dark_oak_red",
-    "augmentatives:outside_beachchair_oak_red",
-    "augmentatives:outside_beachchair_birch_red",
-    "augmentatives:outside_beachchair_spruce_red",
-    "augmentatives:outside_beachchair_cherry_red",
-    "augmentatives:outside_beachchair_mangrove_red",
-    "augmentatives:outside_beachchair_jungle_red",
-    "augmentatives:outside_beachchair_warped_red",
-    "augmentatives:outside_beachchair_crimson_red"
+    "augmentatives:outside_beachchair_acacia",
+    "augmentatives:outside_beachchair_dark_oak",
+    "augmentatives:outside_beachchair_oak",
+    "augmentatives:outside_beachchair_birch",
+    "augmentatives:outside_beachchair_spruce",
+    "augmentatives:outside_beachchair_cherry",
+    "augmentatives:outside_beachchair_mangrove",
+    "augmentatives:outside_beachchair_jungle",
+    "augmentatives:outside_beachchair_warped",
+    "augmentatives:outside_beachchair_crimson"
   ]
 }

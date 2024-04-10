@@ -503,25 +503,28 @@ public class ModBlocks {
 
 
 
-    public static final Block OUTSIDE_ASPHALT_ASPHALT = registerBlock("outside_asphalt_asphalt",
+    public static final Block OUTSIDE_ASPHALT_BLACK = registerBlock("outside_asphalt_black",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_ASPHALT_GREEN = registerBlock("outside_asphalt_asphalt_green",
+    public static final Block OUTSIDE_ASPHALT_GREEN = registerBlock("outside_asphalt_green",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_ASPHALT_RED = registerBlock("outside_asphalt_asphalt_red",
+    public static final Block OUTSIDE_ASPHALT_RED = registerBlock("outside_asphalt_red",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_DOUBLE_YELLOW = registerBlock("outside_asphalt_double_yellow",
+    public static final Block OUTSIDE_ASPHALT_BLUE = registerBlock("outside_asphalt_blue",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_DASHED_YELLOW = registerBlock("outside_asphalt_dashed_yellow",
+
+    public static final Block OUTSIDE_ASPHALT_BLACK_DOUBLE_YELLOW = registerBlock("outside_asphalt_black_double_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_DOTTED_WHITE = registerBlock("outside_asphalt_dotted_white",
+    public static final Block OUTSIDE_ASPHALT_BLACK_DASHED_YELLOW = registerBlock("outside_asphalt_black_dashed_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_DOTTED_YELLOW = registerBlock("outside_asphalt_dotted_yellow",
+    public static final Block OUTSIDE_ASPHALT_BLACK_DOTTED_WHITE = registerBlock("outside_asphalt_black_dotted_white",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_SINGLE_WHITE = registerBlock("outside_asphalt_single_white",
+    public static final Block OUTSIDE_ASPHALT_BLACK_DOTTED_YELLOW = registerBlock("outside_asphalt_black_dotted_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_SINGLE_YELLOW = registerBlock("outside_asphalt_single_yellow",
+    public static final Block OUTSIDE_ASPHALT_BLACK_SINGLE_WHITE = registerBlock("outside_asphalt_black_single_white",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-    public static final Block OUTSIDE_ASPHALT_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_single_white_thick",
+    public static final Block OUTSIDE_ASPHALT_BLACK_SINGLE_YELLOW = registerBlock("outside_asphalt_black_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLACK_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_black_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
 
@@ -555,10 +558,106 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_RED_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_red_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
+
+    public static final Block OUTSIDE_ASPHALT_BLUE_DOUBLE_YELLOW = registerBlock("outside_asphalt_blue_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_DASHED_YELLOW = registerBlock("outside_asphalt_blue_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_DOTTED_WHITE = registerBlock("outside_asphalt_blue_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_DOTTED_YELLOW = registerBlock("outside_asphalt_blue_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_SINGLE_WHITE = registerBlock("outside_asphalt_blue_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_SINGLE_YELLOW = registerBlock("outside_asphalt_blue_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BLUE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_blue_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
+
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK = registerBlock("outside_asphalt_bricks_black",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED = registerBlock("outside_asphalt_bricks_red",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN = registerBlock("outside_asphalt_bricks_green",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE = registerBlock("outside_asphalt_bricks_blue",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_black_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_black_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_black_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_black_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_black_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_black_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLACK_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_black_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_red_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_red_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_red_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_red_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_red_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_red_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_RED_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_red_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_green_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_green_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_green_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_green_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_green_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_green_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_GREEN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_green_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_blue_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_blue_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_blue_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_blue_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_blue_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_blue_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_blue_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
     public static final Block OUTSIDE_SIDEWALK = registerBlock("outside_sidewalk",
             new SidewalkBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
     public static final Block OUTSIDE_SIDEWALK_SINGLE_WHITE = registerBlock("outside_sidewalk_single_white",
             new SidewalkBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
 
     public static final Block OUTSIDE_STREETLIGHT = registerBlock("outside_streetlight",
             new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
@@ -567,6 +666,9 @@ public class ModBlocks {
 
     public static final Block OUTSIDE_SIGN_TOWN = registerBlock("outside_sign_town",
             new TownSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_SIGN_GUARD_RAIL_CAUTION = registerBlock("outside_sign_guard_rail_caution",
+            new GuardRailBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
 
 

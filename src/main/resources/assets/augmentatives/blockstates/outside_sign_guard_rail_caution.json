@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "waterlogged=false,facing=north,north=false,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post"
+    },
+    "waterlogged=false,facing=east,north=false,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 270
+    },
+    "waterlogged=false,facing=south,north=false,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 180
+    },
+    "waterlogged=false,facing=west,north=false,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 90
+    },
+    "waterlogged=false,facing=north,north=true,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post"
+    },
+    "waterlogged=false,facing=east,north=true,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 270
+    },
+    "waterlogged=false,facing=south,north=true,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 180
+    },
+    "waterlogged=false,facing=west,north=true,south=false,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 90
+    },
+    "waterlogged=false,facing=north,north=false,south=true,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post"
+    },
+    "waterlogged=false,facing=east,north=false,south=true,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 270
+    },
+    "waterlogged=false,facing=south,north=false,south=true,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 180
+    },
+    "waterlogged=false,facing=west,north=false,south=true,east=false,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 90
+    },
+    "waterlogged=false,facing=north,north=false,south=false,east=true,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post"
+    },
+    "waterlogged=false,facing=east,north=false,south=false,east=true,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 270
+    },
+    "waterlogged=false,facing=south,north=false,south=false,east=true,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 180
+    },
+    "waterlogged=false,facing=west,north=false,south=false,east=true,west=false": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 90
+    },
+    "waterlogged=false,facing=north,north=false,south=false,east=false,west=true": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post"
+    },
+    "waterlogged=false,facing=east,north=false,south=false,east=false,west=true": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 270
+    },
+    "waterlogged=false,facing=south,north=false,south=false,east=false,west=true": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 180
+    },
+    "waterlogged=false,facing=west,north=false,south=false,east=false,west=true": {
+      "model": "augmentatives:block/outside/sign/guard_rail/caution_post",
+      "y": 90
+    }
+  }
+}
