@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "augmentatives:item/chestnut_boat"
-  }
-}

@@ -17,28 +17,6 @@ public class KitchenItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.kitchenAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.KITCHEN_COUNTER_DOORS_DARK_OAK_GRANITE)).entries((displayContext, entries) -> {
 
-
-
-                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
-
-                        entries.add(ModItems.CHESTNUT_SIGN);
-                        entries.add(ModItems.HANGING_CHESTNUT_SIGN);
-
-                        entries.add(ModItems.CHESTNUT_BOAT);
-                        entries.add(ModItems.CHESTNUT_CHEST_BOAT);
-
-
-
-                        entries.add(ModBlocks.DAHLIA);
-
-                        entries.add(ModBlocks.CHESTNUT_LOG);
-                        entries.add(ModBlocks.CHESTNUT_WOOD);
-                        entries.add(ModBlocks.STRIPPED_CHESTNUT_LOG);
-                        entries.add(ModBlocks.STRIPPED_CHESTNUT_WOOD);
-                        entries.add(ModBlocks.CHESTNUT_PLANKS);
-                        entries.add(ModBlocks.CHESTNUT_LEAVES);
-                        
-
                         entries.add(ModBlocks.KITCHEN_COUNTER_DOORS_DARK_OAK_GRANITE);
                         entries.add(ModBlocks.KITCHEN_COUNTER_DOORS_DARK_OAK_DIORITE);
                         entries.add(ModBlocks.KITCHEN_COUNTER_DOORS_DARK_OAK_ANDESITE);

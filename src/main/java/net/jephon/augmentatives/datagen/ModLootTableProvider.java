@@ -26,14 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.DAHLIA);
-        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
 
-        addDrop(ModBlocks.CHESTNUT_LOG);
-        addDrop(ModBlocks.CHESTNUT_WOOD);
-        addDrop(ModBlocks.STRIPPED_CHESTNUT_LOG);
-        addDrop(ModBlocks.STRIPPED_CHESTNUT_WOOD);
-        addDrop(ModBlocks.CHESTNUT_PLANKS);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

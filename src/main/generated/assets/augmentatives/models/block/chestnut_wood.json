@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "augmentatives:block/chestnut_log",
-    "side": "augmentatives:block/chestnut_log"
-  }
-}

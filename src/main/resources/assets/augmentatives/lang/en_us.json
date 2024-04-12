@@ -40,6 +40,11 @@
   "block.augmentatives.acacia_dining_chair": "Acacia Dining Chair",
   "block.augmentatives.acacia_dining_table": "Acacia Dining Table",
 
+  "//": "=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=",
+  "//": "",
+  "//": "                                     Kitchen Counter with Solid Doors",
+  "//": "",
+  "//": "=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=",
 
   "block.augmentatives.kitchen_counter_doors_dark_oak_granite": "Granite Dark Oak Counter with Doors",
   "block.augmentatives.kitchen_counter_doors_dark_oak_diorite": "Diorite Dark Oak Counter with Doors",
@@ -345,8 +350,23 @@
   "block.augmentatives.outside_asphalt_bricks_blue_single_white_thick": "Blue Asphalt Bricks with a Thick Single White Line",
 
 
-  "block.augmentatives.outside_sidewalk": "Sidewalk",
-  "block.augmentatives.outside_sidewalk_single_white": "Sidewalk with a Single White Line",
+  "block.augmentatives.building_surface_andesite": "Andesite Surface",
+  "block.augmentatives.building_surface_andesite_single_white": "Andesite Surface with a Single White Line",
+    
+  "block.augmentatives.building_surface_stone": "Stone Surface",
+  "block.augmentatives.building_surface_stone_single_white": "Stone Surface with a Single White Line",
+      
+  "block.augmentatives.building_surface_granite": "Granite Surface",
+  "block.augmentatives.building_surface_granite_single_white": "Granite Surface with a Single White Line",
+        
+  "block.augmentatives.building_surface_diorite": "Diorite Surface",
+  "block.augmentatives.building_surface_diorite_single_white": "Diorite Surface with a Single White Line",
+          
+  "block.augmentatives.building_surface_tuff": "Tuff Surface",
+  "block.augmentatives.building_surface_tuff_single_white": "Tuff Surface with a Single White Line",
+            
+  "block.augmentatives.building_surface_deepslate": "Deepslate Surface",
+  "block.augmentatives.building_surface_deepslate_single_white": "Deepslate Surface with a Single White Line",
 
   "block.augmentatives.outside_streetlight": "Streetlight",
   "block.augmentatives.outside_sign_stop": "Stop Sign",
@@ -356,5 +376,5 @@
   "itemGroup.kitchenAugmentatives": "Kitchen Decor- Augmentatives",
   "itemGroup.exteriorAugmentatives": "Exterior Decor - Augmentatives",
   "itemGroup.trafficAugmentatives": "Traffic - Augmentatives",
-  "itemGroup.buildingblocksAugmentatives": "Building Blocks - Augmentatives"
+  "itemGroup.buildingAugmentatives": "Building Blocks - Augmentatives"
 }

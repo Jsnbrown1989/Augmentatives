@@ -80,18 +80,15 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLUE_SINGLE_WHITE_THICK);
-                        
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BLACK);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_GREEN);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_RED);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BLUE);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLACK);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_GREEN);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_RED);
-                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLUE);
 
-                        entries.add(ModBlocks.OUTSIDE_SIDEWALK);
-                        entries.add(ModBlocks.OUTSIDE_SIDEWALK_SINGLE_WHITE);
+
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_ANDESITE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_STONE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_GRANITE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_DIORITE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_TUFF_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_SURFACE_DEEPSLATE_SINGLE_WHITE);
+
 
                         entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
                         entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
