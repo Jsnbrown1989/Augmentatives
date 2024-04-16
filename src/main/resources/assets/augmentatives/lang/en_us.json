@@ -373,6 +373,8 @@
   "block.augmentatives.outside_sign_town": "Town Sign",
   "block.augmentatives.outside_sign_guard_rail_caution": "Guard Rail - Caution",
 
+  "block.augmentatives.building_tar_tar_block": "Tar Block",
+
   "itemGroup.kitchenAugmentatives": "Kitchen Decor- Augmentatives",
   "itemGroup.exteriorAugmentatives": "Exterior Decor - Augmentatives",
   "itemGroup.trafficAugmentatives": "Traffic - Augmentatives",

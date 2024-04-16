@@ -77,6 +77,9 @@ public class AugmentativesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_MANGROVE_DEEPSLATE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_WARPED_DEEPSLATE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_CRIMSON_DEEPSLATE, RenderLayer.getTranslucent());
+
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUILDING_TAR_TAR_BLOCK, RenderLayer.getTranslucent());
     }
 
     private static class EmptyRenderer extends EntityRenderer<SeatEntity> {

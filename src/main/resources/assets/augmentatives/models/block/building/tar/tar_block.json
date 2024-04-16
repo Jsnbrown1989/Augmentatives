@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+		"particle": "augmentatives:block/building/tar/tar",
+		"texture": "augmentatives:block/building/tar/tar"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "north"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "up"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#texture", "cullface": "down"}
+			}
+		},
+		{
+			"from": [2, 2, 2],
+			"to": [14, 14, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#texture"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

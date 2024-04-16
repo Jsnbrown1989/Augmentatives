@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "augmentatives:block/building/tar/tar_block"
+    }
+  }
+}

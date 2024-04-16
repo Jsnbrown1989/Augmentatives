@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.building.AsphaltBlock;
 import net.jephon.augmentatives.block.building.SurfaceBlock;
+import net.jephon.augmentatives.block.building.TarBlock;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.jephon.augmentatives.block.decor.traffic.*;
@@ -14,6 +15,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -810,7 +812,17 @@ public class ModBlocks {
     public static final Block OUTSIDE_STREETLIGHT = registerBlock("outside_streetlight",
             new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+    //                                                                                                             //
+    //                                               Tar                                                          //
+    //                                                                                                             //
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Tar Block
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block BUILDING_TAR_TAR_BLOCK = registerBlock("building_tar_tar_block",
+            new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).velocityMultiplier(0.4f).jumpVelocityMultiplier(0.5f).sounds(BlockSoundGroup.SLIME)));
 
 
 
