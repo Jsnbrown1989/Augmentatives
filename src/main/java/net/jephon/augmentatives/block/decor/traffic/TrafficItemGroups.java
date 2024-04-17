@@ -94,6 +94,8 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
                         entries.add(ModBlocks.OUTSIDE_SIGN_TOWN);
                         entries.add(ModBlocks.OUTSIDE_SIGN_GUARD_RAIL_CAUTION);
+                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_CONE);
+                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_BARREL);
 
                     }).build());
     public static void registerItemGroups() {

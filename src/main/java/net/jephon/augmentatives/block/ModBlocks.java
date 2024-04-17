@@ -778,6 +778,8 @@ public class ModBlocks {
             new SurfaceBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
 
+    public static final RegistryObject<Block> BENCH = registerBlock("bench", () -> new BenchWithBack(AbstractBlock.Properties.create(Material.ROCK).notSolid()));
+    public static final RegistryObject<Block> BENCH_BACK_DARK_OAK = registerBlock("bench_back_dark_oak", () -> new BenchBlock(AbstractBlock.Properties.create(Material.ROCK).notSolid()));
 
 
 
@@ -804,6 +806,12 @@ public class ModBlocks {
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_SIGN_GUARD_RAIL_CAUTION = registerBlock("outside_sign_guard_rail_caution",
             new GuardRailBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_TRAFFIC_CONE = registerBlock("outside_sign_traffic_cone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_TRAFFIC_BARREL = registerBlock("outside_sign_traffic_barrel",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
