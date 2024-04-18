@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/outside/asphalt/smooth_orange_double_white",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/outside/asphalt/smooth_orange_double_white",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/outside/asphalt/smooth_orange_double_white",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/outside/asphalt/smooth_orange_double_white"
+    }
+  }
+}
