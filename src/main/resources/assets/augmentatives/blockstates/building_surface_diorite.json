@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/building/surface/diorite"
+    },
+    "facing=north": {
+      "model": "augmentatives:block/building/surface/diorite"
+    },
+    "facing=west": {
+      "model": "augmentatives:block/building/surface/diorite"
+    },
+    "facing=south": {
+      "model": "augmentatives:block/building/surface/diorite"
+    }
+  }
+}
