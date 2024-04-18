@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"3": "augmentatives:block/outside/asphalt/side",
+		"4": "augmentatives:block/outside/asphalt/bottom",
+		"11": "augmentatives:block/outside/asphalt/dotted_yellow",
+		"particle": "augmentatives:block/outside/asphalt/bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [12, 0, 16, 4], "texture": "#3"},
+				"east": {"uv": [12, 0, 16, 4], "texture": "#3"},
+				"south": {"uv": [12, 0, 16, 4], "texture": "#3"},
+				"west": {"uv": [12, 0, 16, 4], "texture": "#3"},
+				"up": {"uv": [12, 0, 16, 4], "texture": "#11"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4"}
+			}
+		},
+		{
+			"name": "single_thick",
+			"from": [0, 15.76, 0],
+			"to": [16, 16.01, 16],
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#missing"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#missing"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#missing"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#missing"},
+				"up": {"uv": [8, 0, 12, 4], "texture": "#missing"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#missing"}
+			}
+		}
+	]
+}

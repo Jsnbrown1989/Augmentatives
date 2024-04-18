@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "augmentatives:block/outside/sign/traffic_cone"
+      "model": "augmentatives:block/outside/sign/traffic_cone/traffic_cone"
     }
   }
 }

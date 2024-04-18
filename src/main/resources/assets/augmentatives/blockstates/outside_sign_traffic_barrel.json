@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "augmentatives:block/outside/sign/traffic_barrel"
+      "model": "augmentatives:block/outside/sign/traffic_barrel/traffic_barrel"
     }
   }
 }
