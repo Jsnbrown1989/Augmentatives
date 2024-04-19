@@ -4,14 +4,12 @@ package net.jephon.augmentatives.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
-import net.jephon.augmentatives.block.building.AsphaltBlock;
-import net.jephon.augmentatives.block.building.SurfaceBlock;
-import net.jephon.augmentatives.block.building.TarBlock;
-import net.jephon.augmentatives.block.building.WetAsphaltBlock;
+import net.jephon.augmentatives.block.building.*;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.jephon.augmentatives.block.decor.traffic.*;
 import net.jephon.augmentatives.util.Dryable;
+import net.jephon.augmentatives.util.Rustable;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -637,6 +635,30 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Black Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK = registerBlock("outside_asphalt_bricks_mossy_black",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_black_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_black_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_black_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_black_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_black_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_black_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_black_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_black_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_black_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Black Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_ASPHALT_SMOOTH_BLACK = registerBlock("outside_asphalt_smooth_black",
@@ -731,6 +753,31 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_RED_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_cracked_red_single_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_RED_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_red_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Red Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED = registerBlock("outside_asphalt_bricks_mossy_red",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_red_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_red_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_red_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_red_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_red_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_red_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_red_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_red_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_red_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -828,6 +875,31 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_GREEN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_green_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Green Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN = registerBlock("outside_asphalt_bricks_mossy_green",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_green_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_green_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_green_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_green_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_green_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_green_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_green_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_green_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_green_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Green Asphalt - Smooth
@@ -928,6 +1000,31 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Blue Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE = registerBlock("outside_asphalt_bricks_mossy_blue",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_blue_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_blue_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_blue_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_blue_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_blue_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_blue_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_blue_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_blue_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_blue_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Blue Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_ASPHALT_SMOOTH_BLUE = registerBlock("outside_asphalt_smooth_blue",
@@ -1024,6 +1121,32 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_GRAY_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_light_gray_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Light Gray Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY = registerBlock("outside_asphalt_bricks_mossy_light_gray",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_gray_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_gray_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_gray_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_gray_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_gray_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_gray_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_gray_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_gray_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_light_gray_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Light Gray Asphalt - Smooth
@@ -1124,6 +1247,30 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Brown Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN = registerBlock("outside_asphalt_bricks_mossy_brown",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_brown_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_brown_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_brown_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_brown_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_brown_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_brown_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_brown_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_brown_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_brown_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Brown Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_ASPHALT_SMOOTH_BROWN = registerBlock("outside_asphalt_smooth_brown",
@@ -1218,6 +1365,32 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_CYAN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_cyan_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Cyan Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN = registerBlock("outside_asphalt_bricks_mossy_cyan",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_cyan_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_cyan_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_cyan_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_cyan_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_cyan_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_cyan_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_cyan_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_cyan_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_cyan_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Cyan Asphalt - Smooth
@@ -1316,6 +1489,32 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_GRAY_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_gray_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Gray Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY = registerBlock("outside_asphalt_bricks_mossy_gray",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_gray_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_gray_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_gray_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_gray_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_gray_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_gray_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_gray_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_gray_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_gray_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Gray Asphalt - Smooth
@@ -1416,6 +1615,30 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Light Blue Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE = registerBlock("outside_asphalt_bricks_mossy_light_blue",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_blue_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_blue_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_blue_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_blue_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_blue_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_blue_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_light_blue_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_light_blue_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_light_blue_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Light Blue Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_ASPHALT_SMOOTH_LIGHT_BLUE = registerBlock("outside_asphalt_smooth_light_blue",
@@ -1512,6 +1735,32 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_LIME_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_lime_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Lime Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME = registerBlock("outside_asphalt_bricks_mossy_lime",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_lime_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_lime_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_lime_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_lime_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_lime_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_lime_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_lime_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_lime_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_lime_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    
+    
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Lime Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1607,6 +1856,30 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_MAGENTA_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_cracked_magenta_single_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_MAGENTA_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_magenta_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Magenta Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA = registerBlock("outside_asphalt_bricks_mossy_magenta",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_magenta_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_magenta_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_magenta_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_magenta_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_magenta_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_magenta_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_magenta_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_magenta_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_magenta_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1708,6 +1981,31 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_ORANGE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_orange_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Orange Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE = registerBlock("outside_asphalt_bricks_mossy_orange",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_orange_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_orange_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_orange_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_orange_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_orange_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_orange_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_orange_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_orange_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_orange_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Orange Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1803,6 +2101,30 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_PINK_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_cracked_pink_single_yellow",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_PINK_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_pink_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Pink Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK = registerBlock("outside_asphalt_bricks_mossy_pink",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_pink_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_pink_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_pink_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_pink_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_pink_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_pink_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_pink_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_pink_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_pink_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1902,6 +2224,32 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_PURPLE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_purple_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Purple Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE = registerBlock("outside_asphalt_bricks_mossy_purple",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_purple_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_purple_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_purple_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_purple_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_purple_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_purple_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_purple_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_purple_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_purple_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Purple Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1998,6 +2346,31 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_cracked_white_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // White Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE = registerBlock("outside_asphalt_bricks_mossy_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_white_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_white_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_white_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_white_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_white_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_white_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_white_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_white_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_white_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // White Asphalt - Smooth
@@ -2098,6 +2471,32 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Yellow Asphalt Bricks - Mossy
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW = registerBlock("outside_asphalt_bricks_mossy_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOUBLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_yellow_double_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOUBLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_yellow_double_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DASHED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_yellow_dashed_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DASHED_WHITE = registerBlock("outside_asphalt_bricks_mossy_yellow_dashed_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOTTED_WHITE = registerBlock("outside_asphalt_bricks_mossy_yellow_dotted_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOTTED_YELLOW = registerBlock("outside_asphalt_bricks_mossy_yellow_dotted_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_WHITE = registerBlock("outside_asphalt_bricks_mossy_yellow_single_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_YELLOW = registerBlock("outside_asphalt_bricks_mossy_yellow_single_yellow",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_bricks_mossy_yellow_single_white_thick",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Yellow Asphalt - Smooth
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_ASPHALT_SMOOTH_YELLOW = registerBlock("outside_asphalt_smooth_yellow",
@@ -2120,6 +2519,9 @@ public class ModBlocks {
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
     public static final Block OUTSIDE_ASPHALT_SMOOTH_YELLOW_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_smooth_yellow_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_YELLOW = Blocks.register("outside_asphalt_smooth_slab_yellow", (Block)new SlabBlock(AbstractBlock.Settings.copyShallow(OUTSIDE_ASPHALT_SMOOTH_YELLOW)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_WALL_YELLOW = Blocks.register("outside_asphalt_smooth_wall_yellow", (Block)new WallBlock(AbstractBlock.Settings.copyShallow(OUTSIDE_ASPHALT_SMOOTH_YELLOW).solid()));
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2265,6 +2667,25 @@ public class ModBlocks {
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block BUILDING_TAR_TAR_BLOCK = registerBlock("building_tar_tar_block",
             new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).velocityMultiplier(0.4f).jumpVelocityMultiplier(0.5f).sounds(BlockSoundGroup.SLIME)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+    //                                                                                                             //
+    //                                             Cast Iron                                                       //
+    //                                                                                                             //
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Cast Iron Block
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block BUILDING_CAST_IRON_BLOCK = registerBlock("building_cast_iron_block",
+            new CastIronBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BLOCK_EXPOSED = registerBlock("building_cast_iron_block_exposed",
+            new CastIronBlock(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BLOCK_WEATHERED = registerBlock("building_cast_iron_block_weathered",
+            new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BLOCK_RUSTED = registerBlock("building_cast_iron_block_rusted",
+            new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
 
 
 

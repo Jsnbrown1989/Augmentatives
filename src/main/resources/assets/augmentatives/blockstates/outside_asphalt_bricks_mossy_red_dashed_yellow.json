@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_red_dashed_yellow",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_red_dashed_yellow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_red_dashed_yellow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_red_dashed_yellow"
+    }
+  }
+}

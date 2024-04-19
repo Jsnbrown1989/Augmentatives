@@ -85,6 +85,23 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_YELLOW);
 
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW);
+
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WET_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WET_BLUE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WET_BROWN);
@@ -109,9 +126,13 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.BUILDING_SURFACE_TUFF);
                         entries.add(ModBlocks.BUILDING_SURFACE_DEEPSLATE);
                         entries.add(ModBlocks.BUILDING_TAR_TAR_BLOCK);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_RUSTED);
 
                     }).build());
     public static void registerItemGroups() {
-        Augmentatives.LOGGER.info("Registering Item Groups for " + Augmentatives.MOD_ID);
+        Augmentatives.LOGGER.info("Registering Building Item Groups for " + Augmentatives.MOD_ID);
     }
 }

@@ -75,6 +75,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLACK_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLACK_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLACK_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Black Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Blue Asphalt
@@ -127,6 +140,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLUE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLUE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLUE_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Blue Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE_SINGLE_WHITE_THICK);
                         
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -180,6 +206,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BROWN_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BROWN_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BROWN_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Brown Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN_SINGLE_WHITE_THICK);
                         
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -233,6 +272,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_CYAN_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_CYAN_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_CYAN_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Cyan Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_CYAN_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Gray Asphalt
@@ -285,6 +337,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GRAY_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GRAY_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GRAY_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Gray Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GRAY_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Green Asphalt
@@ -337,6 +402,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GREEN_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GREEN_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_GREEN_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Green Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_GREEN_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Light Blue Asphalt
@@ -389,6 +467,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_BLUE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_BLUE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_BLUE_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Light Blue Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_BLUE_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Light Gray Asphalt
@@ -441,6 +532,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_GRAY_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_GRAY_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIGHT_GRAY_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Light Gray Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIGHT_GRAY_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Lime Asphalt
@@ -493,6 +597,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIME_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIME_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_LIME_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Lime Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_LIME_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Magenta Asphalt
@@ -546,7 +663,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_MAGENTA_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_MAGENTA_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_MAGENTA_SINGLE_WHITE_THICK);
-                        
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Magenta Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_MAGENTA_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Orange Asphalt
@@ -599,6 +728,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_ORANGE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_ORANGE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_ORANGE_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Orange Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_ORANGE_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Pink Asphalt
@@ -651,6 +793,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PINK_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PINK_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PINK_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Pink Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PINK_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Purple Asphalt
@@ -703,6 +858,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PURPLE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PURPLE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_PURPLE_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Purple Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_PURPLE_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Red Asphalt
@@ -755,6 +923,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_RED_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_RED_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_RED_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Red Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // White Asphalt
@@ -807,6 +988,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE_SINGLE_WHITE_THICK);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // White Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE_SINGLE_WHITE_THICK);
                         
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Yellow Asphalt
@@ -859,16 +1053,19 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_YELLOW_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_YELLOW_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_YELLOW_SINGLE_WHITE_THICK);
-                        
-                        
-                        
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_ANDESITE_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_STONE_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_GRANITE_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_DIORITE_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_TUFF_SINGLE_WHITE);
-                        entries.add(ModBlocks.OUTSIDE_SURFACE_DEEPSLATE_SINGLE_WHITE);
 
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Yellow Asphalt Bricks - Mossy
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOUBLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOUBLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOTTED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DOTTED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DASHED_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_DASHED_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_YELLOW);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_WHITE_THICK);
 
                         entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
                         entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
