@@ -2658,7 +2658,7 @@ public class ModBlocks {
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
     //                                                                                                             //
-    //                                               Tar                                                          //
+    //                                             Tar / Oil                                                       //
     //                                                                                                             //
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 
@@ -2666,7 +2666,9 @@ public class ModBlocks {
     // Tar Block
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block BUILDING_TAR_TAR_BLOCK = registerBlock("building_tar_tar_block",
-            new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).velocityMultiplier(0.4f).jumpVelocityMultiplier(0.5f).sounds(BlockSoundGroup.SLIME)));
+            new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).velocityMultiplier(0.5f).jumpVelocityMultiplier(0.6f).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.SLIME)));
+    public static final Block BUILDING_TAR_OIL_BLOCK = registerBlock("building_tar_oil_block",
+            new OilBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).nonOpaque().slipperiness(0.989f).sounds(BlockSoundGroup.SLIME)));
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

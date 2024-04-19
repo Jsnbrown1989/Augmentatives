@@ -126,6 +126,7 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.BUILDING_SURFACE_TUFF);
                         entries.add(ModBlocks.BUILDING_SURFACE_DEEPSLATE);
                         entries.add(ModBlocks.BUILDING_TAR_TAR_BLOCK);
+                        entries.add(ModBlocks.BUILDING_TAR_OIL_BLOCK);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_EXPOSED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_WEATHERED);
