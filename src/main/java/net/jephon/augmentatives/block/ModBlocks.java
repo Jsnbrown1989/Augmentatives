@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.building.*;
+import net.jephon.augmentatives.block.common.PaintBucketBlock;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.jephon.augmentatives.block.decor.traffic.*;
@@ -2669,6 +2670,18 @@ public class ModBlocks {
             new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).velocityMultiplier(0.5f).jumpVelocityMultiplier(0.6f).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.SLIME)));
     public static final Block BUILDING_TAR_OIL_BLOCK = registerBlock("building_tar_oil_block",
             new OilBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).nonOpaque().slipperiness(0.989f).sounds(BlockSoundGroup.SLIME)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+    //                                                                                                             //
+    //                                             Paint Bucket                                                       //
+    //                                                                                                             //
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Cast Iron Block
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_BUCKET_PAINT = registerBlock("outside_bucket_paint",
+            new PaintBucketBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

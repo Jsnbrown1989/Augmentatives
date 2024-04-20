@@ -17,6 +17,7 @@ public class AugmentativesClient implements ClientModInitializer {
     public void onInitializeClient() {
         EntityRendererRegistry.register(ModSit.SEAT, EmptyRenderer::new);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OUTSIDE_BUCKET_PAINT, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_ACACIA_ANDESITE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_JUNGLE_ANDESITE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KITCHEN_COUNTER_GLASS_DOORS_OAK_ANDESITE, RenderLayer.getTranslucent());

@@ -16,7 +16,16 @@ public class TrafficItemGroups {
             new Identifier(Augmentatives.MOD_ID, "outside_sign_stop"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.trafficAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OUTSIDE_SIGN_STOP)).entries((displayContext, entries) -> {
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+                        //                                                                                                             //
+                        //                                               Paint Bucket                                                  //
+                        //                                                                                                             //
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Paint Bucket
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_BUCKET_PAINT);
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
                         //                                                                                                             //
