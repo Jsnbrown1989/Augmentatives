@@ -7,6 +7,7 @@ import net.jephon.augmentatives.block.building.BuildingItemGroups;
 import net.jephon.augmentatives.block.decor.furniture.outside.OutsideItemGroups;
 import net.jephon.augmentatives.block.decor.traffic.TrafficItemGroups;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.KitchenItemGroups;
+import net.jephon.augmentatives.item.ModItemGroup;
 import net.jephon.augmentatives.item.ModItems;
 import net.jephon.augmentatives.sound.ModSounds;
 import net.jephon.augmentatives.util.ModSit;
@@ -23,6 +24,7 @@ public class Augmentatives implements ModInitializer {
 		OutsideItemGroups.registerItemGroups();
 		TrafficItemGroups.registerItemGroups();
 		BuildingItemGroups.registerItemGroups();
+		ModItemGroup.registerItemGroups();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

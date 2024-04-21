@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sand",
+      "item": "minecraft:gravel",
+      "item": "minecraft:magma",
+      "item": "minecraft:red_dye",
+      "item": "augmentatives:building_tar_tar_block"
+    }
+  ],
+  "result": {
+    "item": "augmentatives:outside_asphalt_wet_red",
+    "count": 3
+  }
+}

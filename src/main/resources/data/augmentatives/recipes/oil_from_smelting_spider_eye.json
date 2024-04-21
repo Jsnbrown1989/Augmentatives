@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "oil",
+  "ingredient": {
+    "item": "minecraft:spider_eye"
+  },
+  "result": "augmentatives:oil_item"
+}
