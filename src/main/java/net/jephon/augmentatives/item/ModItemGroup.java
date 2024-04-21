@@ -1,5 +1,4 @@
-package net.jephon.augmentatives.item;
-package net.kaupenjoe.mccourse.item;
+package net.jephon.augmentatives.item;package net.kaupenjoe.mccourse.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jephon.augmentatives.Augmentatives;
