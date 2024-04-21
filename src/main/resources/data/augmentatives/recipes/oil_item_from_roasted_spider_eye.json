@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "augmentatives:roasted_spider_eye"
+    }
+],
+  "result": {
+    "item": "augmentatives:sludge",
+    "count": 3
+  }
+}

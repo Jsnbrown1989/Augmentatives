@@ -3,9 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:honey_block",
-      "item": "minecraft:slime_block",
       "item": "augmentatives:building_tar_oil_block"
+    },
+    {
+      "item": "minecraft:honey_block"
+    },
+    {
+    "item": "minecraft:slime_block"
     }
   ],
   "result": {
