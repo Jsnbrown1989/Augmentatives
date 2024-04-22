@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/asphalt/bricks_slab_light_blue"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/asphalt/full_light_blue"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/asphalt/bricks_slab_top_light_blue"
+    }
+  }
+}

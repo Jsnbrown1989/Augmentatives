@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "augmentatives:outside_asphalt_red"
+  },
+  "result": "augmentatives:outside_asphalt_bricks_mossy_red"
+}

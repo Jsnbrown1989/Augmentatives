@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_slab_green"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_green"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_slab_top_green"
+    }
+  }
+}

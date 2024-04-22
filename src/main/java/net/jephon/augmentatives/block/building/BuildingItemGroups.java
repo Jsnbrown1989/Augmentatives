@@ -34,6 +34,23 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_YELLOW);
 
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_YELLOW);
+
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_BLUE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_BROWN);
@@ -50,7 +67,24 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_RED);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_YELLOW);
-                        
+
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_SMOOTH_SLAB_YELLOW);
+
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BLUE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_BROWN);
@@ -67,6 +101,23 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_RED);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_YELLOW);
+
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_SLAB_YELLOW);
 
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_BLUE);
@@ -85,6 +136,23 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_YELLOW);
 
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_YELLOW);
+
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BLUE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_BROWN);
@@ -101,6 +169,23 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_RED);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW);
+
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BLACK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BROWN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_CYAN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_GREEN);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIGHT_BLUE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIGHT_GRAY);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIME);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_MAGENTA);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_ORANGE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_PINK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_PURPLE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_RED);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_WHITE);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_YELLOW);
 
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WET_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_WET_BLUE);

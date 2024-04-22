@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/asphalt/bricks_cracked_slab_orange"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/asphalt/bricks_cracked_orange"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/asphalt/bricks_cracked_slab_top_orange"
+    }
+  }
+}

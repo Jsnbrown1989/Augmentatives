@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_slab_cyan"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_cyan"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/asphalt/bricks_mossy_slab_top_cyan"
+    }
+  }
+}

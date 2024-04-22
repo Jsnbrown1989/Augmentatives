@@ -2521,8 +2521,192 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_SMOOTH_YELLOW_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_smooth_yellow_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
-    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_YELLOW = Blocks.register("outside_asphalt_smooth_slab_yellow", (Block)new SlabBlock(AbstractBlock.Settings.copyShallow(OUTSIDE_ASPHALT_SMOOTH_YELLOW)));
-    public static final Block OUTSIDE_ASPHALT_SMOOTH_WALL_YELLOW = Blocks.register("outside_asphalt_smooth_wall_yellow", (Block)new WallBlock(AbstractBlock.Settings.copyShallow(OUTSIDE_ASPHALT_SMOOTH_YELLOW).solid()));
+
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Asphalt Bricks Slab
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_RED = registerBlock("outside_asphalt_bricks_slab_red",
+            new SlabBlock( AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_PURPLE = registerBlock("outside_asphalt_bricks_slab_purple",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_LIGHT_GRAY = registerBlock("outside_asphalt_bricks_slab_light_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_BLACK = registerBlock("outside_asphalt_bricks_slab_black",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_GRAY = registerBlock("outside_asphalt_bricks_slab_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_WHITE = registerBlock("outside_asphalt_bricks_slab_white",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_BLUE = registerBlock("outside_asphalt_bricks_slab_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_BROWN = registerBlock("outside_asphalt_bricks_slab_brown",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_CYAN = registerBlock("outside_asphalt_bricks_slab_cyan",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_GREEN = registerBlock("outside_asphalt_bricks_slab_green",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_LIGHT_BLUE = registerBlock("outside_asphalt_bricks_slab_light_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_LIME = registerBlock("outside_asphalt_bricks_slab_lime",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_MAGENTA = registerBlock("outside_asphalt_bricks_slab_magenta",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_ORANGE = registerBlock("outside_asphalt_bricks_slab_orange",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_PINK = registerBlock("outside_asphalt_bricks_slab_pink",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_SLAB_YELLOW = registerBlock("outside_asphalt_bricks_slab_yellow",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Asphalt Bricks Cracked Slab
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_RED = registerBlock("outside_asphalt_bricks_cracked_slab_red",
+            new SlabBlock( AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_PURPLE = registerBlock("outside_asphalt_bricks_cracked_slab_purple",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIGHT_GRAY = registerBlock("outside_asphalt_bricks_cracked_slab_light_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BLACK = registerBlock("outside_asphalt_bricks_cracked_slab_black",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_GRAY = registerBlock("outside_asphalt_bricks_cracked_slab_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_WHITE = registerBlock("outside_asphalt_bricks_cracked_slab_white",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BLUE = registerBlock("outside_asphalt_bricks_cracked_slab_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_BROWN = registerBlock("outside_asphalt_bricks_cracked_slab_brown",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_CYAN = registerBlock("outside_asphalt_bricks_cracked_slab_cyan",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_GREEN = registerBlock("outside_asphalt_bricks_cracked_slab_green",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIGHT_BLUE = registerBlock("outside_asphalt_bricks_cracked_slab_light_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_LIME = registerBlock("outside_asphalt_bricks_cracked_slab_lime",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_MAGENTA = registerBlock("outside_asphalt_bricks_cracked_slab_magenta",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_ORANGE = registerBlock("outside_asphalt_bricks_cracked_slab_orange",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_PINK = registerBlock("outside_asphalt_bricks_cracked_slab_pink",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_CRACKED_SLAB_YELLOW = registerBlock("outside_asphalt_bricks_cracked_slab_yellow",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Asphalt Bricks Mossy Slab
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_RED = registerBlock("outside_asphalt_bricks_mossy_slab_red",
+            new SlabBlock( AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_PURPLE = registerBlock("outside_asphalt_bricks_mossy_slab_purple",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIGHT_GRAY = registerBlock("outside_asphalt_bricks_mossy_slab_light_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BLACK = registerBlock("outside_asphalt_bricks_mossy_slab_black",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_GRAY = registerBlock("outside_asphalt_bricks_mossy_slab_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_WHITE = registerBlock("outside_asphalt_bricks_mossy_slab_white",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BLUE = registerBlock("outside_asphalt_bricks_mossy_slab_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_BROWN = registerBlock("outside_asphalt_bricks_mossy_slab_brown",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_CYAN = registerBlock("outside_asphalt_bricks_mossy_slab_cyan",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_GREEN = registerBlock("outside_asphalt_bricks_mossy_slab_green",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIGHT_BLUE = registerBlock("outside_asphalt_bricks_mossy_slab_light_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_LIME = registerBlock("outside_asphalt_bricks_mossy_slab_lime",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_MAGENTA = registerBlock("outside_asphalt_bricks_mossy_slab_magenta",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_ORANGE = registerBlock("outside_asphalt_bricks_mossy_slab_orange",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_PINK = registerBlock("outside_asphalt_bricks_mossy_slab_pink",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_BRICKS_MOSSY_SLAB_YELLOW = registerBlock("outside_asphalt_bricks_mossy_slab_yellow",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Asphalt Slab
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_SLAB_RED = registerBlock("outside_asphalt_slab_red",
+            new SlabBlock( AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_PURPLE = registerBlock("outside_asphalt_slab_purple",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_LIGHT_GRAY = registerBlock("outside_asphalt_slab_light_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_BLACK = registerBlock("outside_asphalt_slab_black",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_GRAY = registerBlock("outside_asphalt_slab_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_WHITE = registerBlock("outside_asphalt_slab_white",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_BLUE = registerBlock("outside_asphalt_slab_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_BROWN = registerBlock("outside_asphalt_slab_brown",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_CYAN = registerBlock("outside_asphalt_slab_cyan",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_GREEN = registerBlock("outside_asphalt_slab_green",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_LIGHT_BLUE = registerBlock("outside_asphalt_slab_light_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_LIME = registerBlock("outside_asphalt_slab_lime",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_MAGENTA = registerBlock("outside_asphalt_slab_magenta",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_ORANGE = registerBlock("outside_asphalt_slab_orange",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_PINK = registerBlock("outside_asphalt_slab_pink",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SLAB_YELLOW = registerBlock("outside_asphalt_slab_yellow",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Asphalt Slab
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_RED = registerBlock("outside_asphalt_smooth_slab_red",
+            new SlabBlock( AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_PURPLE = registerBlock("outside_asphalt_smooth_slab_purple",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_LIGHT_GRAY = registerBlock("outside_asphalt_smooth_slab_light_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_BLACK = registerBlock("outside_asphalt_smooth_slab_black",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_GRAY = registerBlock("outside_asphalt_smooth_slab_gray",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_WHITE = registerBlock("outside_asphalt_smooth_slab_white",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_BLUE = registerBlock("outside_asphalt_smooth_slab_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_BROWN = registerBlock("outside_asphalt_smooth_slab_brown",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_CYAN = registerBlock("outside_asphalt_smooth_slab_cyan",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_GREEN = registerBlock("outside_asphalt_smooth_slab_green",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_LIGHT_BLUE = registerBlock("outside_asphalt_smooth_slab_light_blue",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_LIME = registerBlock("outside_asphalt_smooth_slab_lime",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_MAGENTA = registerBlock("outside_asphalt_smooth_slab_magenta",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_ORANGE = registerBlock("outside_asphalt_smooth_slab_orange",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_PINK = registerBlock("outside_asphalt_smooth_slab_pink",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+    public static final Block OUTSIDE_ASPHALT_SMOOTH_SLAB_YELLOW = registerBlock("outside_asphalt_smooth_slab_yellow",
+            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.MUD)));
+
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
