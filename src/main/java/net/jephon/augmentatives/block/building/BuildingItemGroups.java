@@ -216,6 +216,12 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_EXPOSED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_WEATHERED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_RUSTED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM_RUSTED);
+
+
 
                     }).build());
     public static void registerItemGroups() {

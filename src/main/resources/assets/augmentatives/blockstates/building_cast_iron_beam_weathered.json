@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "augmentatives:block/outside/cast_iron/beam_weathered",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "augmentatives:block/outside/cast_iron/beam_weathered",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "augmentatives:block/outside/cast_iron/beam_weathered",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "augmentatives:block/outside/cast_iron/beam_weathered"
+    }
+  }
+}

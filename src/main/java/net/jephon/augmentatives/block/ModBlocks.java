@@ -2177,6 +2177,10 @@ public class ModBlocks {
     public static final Block OUTSIDE_ASPHALT_PURPLE_SINGLE_WHITE_THICK = registerBlock("outside_asphalt_purple_single_white_thick",
             new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
+    public static final Block OUTSIDE_ASPHALT_PURPLE_DIAGONAL_WHITE = registerBlock("outside_asphalt_purple_diagonal_white",
+            new AsphaltBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Purple Asphalt Bricks
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2885,6 +2889,14 @@ public class ModBlocks {
             new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
     public static final Block BUILDING_CAST_IRON_BLOCK_RUSTED = registerBlock("building_cast_iron_block_rusted",
             new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BEAM = registerBlock("building_cast_iron_beam",
+            new CastIronBeamBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BEAM_EXPOSED = registerBlock("building_cast_iron_beam_exposed",
+            new CastIronBeamBlock(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BEAM_WEATHERED = registerBlock("building_cast_iron_beam_weathered",
+            new CastIronBeamBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BEAM_RUSTED = registerBlock("building_cast_iron_beam_rusted",
+            new CastIronBeamBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
 
 
 

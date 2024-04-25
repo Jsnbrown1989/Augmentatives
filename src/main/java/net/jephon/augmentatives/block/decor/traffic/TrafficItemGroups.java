@@ -828,6 +828,7 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_PURPLE_SINGLE_WHITE);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_PURPLE_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_PURPLE_SINGLE_WHITE_THICK);
+                        entries.add(ModBlocks.OUTSIDE_ASPHALT_PURPLE_DIAGONAL_WHITE);
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Purple Asphalt Bricks
