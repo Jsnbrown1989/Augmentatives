@@ -8,15 +8,15 @@
       "y": 270
     },
     "facing=south,part=top,color=red": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_red",
-      "y": 180
+      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_red"
     },
     "facing=east,part=top,color=red": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_red",
       "y": 90
     },
     "facing=north,part=top,color=red": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_red"
+      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_red",
+      "y": 180
     },
     "facing=west,part=top,color=yellow": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_yellow",
@@ -27,7 +27,7 @@
     },
     "facing=east,part=top,color=yellow": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_yellow",
-      "y": 270
+      "y": 90
     },
     "facing=north,part=top,color=yellow": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_yellow",
@@ -35,33 +35,18 @@
     },
     "facing=west,part=top,color=green": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green",
-      "y": 90
+      "y": 270
     },
     "facing=south,part=top,color=green": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green",
-      "y": 180
+      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green"
     },
     "facing=east,part=top,color=green": {
       "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green",
       "y": 90
     },
     "facing=north,part=top,color=green": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green"
-    },
-    "facing=west,part=top,powered=true": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_off",
-      "y": 270
-    },
-    "facing=south,part=top,powered=true": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_off",
+      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_green",
       "y": 180
-    },
-    "facing=east,part=top,powered=true": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_off",
-      "y": 90
-    },
-    "facing=north,part=top,powered=true": {
-      "model": "augmentatives:block/outside/sign/traffic_light/traffic_light_top_off"
     }
   }
 }

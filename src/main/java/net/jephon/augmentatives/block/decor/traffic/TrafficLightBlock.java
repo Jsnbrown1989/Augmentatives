@@ -1,17 +1,17 @@
 package net.jephon.augmentatives.block.decor.traffic;
 
 import com.mojang.serialization.MapCodec;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.util.*;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.*;
+import net.minecraft.client.util.ParticleUtil;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -23,15 +23,24 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
+import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.stream.Stream;
+
+import static net.jephon.augmentatives.util.TrafficLightColor.*;
 
 public class TrafficLightBlock
         extends Block {
@@ -47,7 +56,7 @@ public class TrafficLightBlock
     }
     public TrafficLightBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH).with(PART, MultiBlockUtil.MultiblockPart.HEAD).with(POWERED, false).with(COLOR, TrafficLightColor.YELLOW));
+        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH).with(PART, MultiBlockUtil.MultiblockPart.HEAD).with(POWERED, false).with(COLOR, YELLOW));
     }
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
@@ -73,7 +82,7 @@ public class TrafficLightBlock
         BlockPos blockPos = ctx.getBlockPos();
         World world = ctx.getWorld();
         if (blockPos.getY() < world.getTopY() - 1 && world.getBlockState(blockPos.up()).canReplace(ctx)) {
-            return (BlockState)((BlockState)this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing())).with(PART, MultiBlockUtil.MultiblockPart.BOTTOM).with(POWERED, false).with(COLOR, TrafficLightColor.YELLOW);
+            return (BlockState)((BlockState)this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing())).with(PART, MultiBlockUtil.MultiblockPart.BOTTOM).with(POWERED, false).with(COLOR, YELLOW);
         }
         return null;
     }
@@ -107,11 +116,11 @@ public class TrafficLightBlock
                 MultiBlockUtil.MultiblockPart multiblockPart = state.get(PART);
                 if (multiblockPart == MultiBlockUtil.MultiblockPart.TOP && (blockState = world.getBlockState(blockPos = pos.offset(Direction.DOWN, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM) {
                     BlockState blockState2 = Blocks.AIR.getDefaultState();
-                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_LISTENERS | Block.SKIP_DROPS);
                     world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
                 } else if (multiblockPart == MultiBlockUtil.MultiblockPart.BOTTOM && (blockState = world.getBlockState(blockPos = pos.offset(Direction.UP, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.TOP) {
                     BlockState blockState2 = Blocks.AIR.getDefaultState();
-                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+                    world.setBlockState(blockPos, blockState2, Block.NOTIFY_LISTENERS | Block.SKIP_DROPS);
                     world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
                 }
             }
@@ -124,44 +133,88 @@ public class TrafficLightBlock
         MultiBlockUtil.MultiblockPart multiblockPart = state.get(PART);
         if (multiblockPart == MultiBlockUtil.MultiblockPart.TOP && (blockState = world.getBlockState(blockPos = pos.offset(Direction.DOWN, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM) {
             BlockState blockState2 = Blocks.AIR.getDefaultState();
-            world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+            world.setBlockState(blockPos, blockState2, Block.NOTIFY_LISTENERS | Block.SKIP_DROPS);
             world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
         } else if (multiblockPart == MultiBlockUtil.MultiblockPart.BOTTOM && (blockState = world.getBlockState(blockPos = pos.offset(Direction.UP, 2))).isOf(state.getBlock()) && blockState.get(PART) == MultiBlockUtil.MultiblockPart.TOP) {
             BlockState blockState2 = Blocks.AIR.getDefaultState();
-            world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
+            world.setBlockState(blockPos, blockState2, Block.NOTIFY_LISTENERS | Block.SKIP_DROPS);
             world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
         }
     }
-
     private void placeAdditionalBlock(World world, BlockPos pos, BlockPos originPos, Direction direction, BlockState state, MultiBlockUtil.MultiblockPart part) {
         world.setBlockState(pos, ModBlocks.OUTSIDE_SIGN_TRAFFIC_LIGHT.getDefaultState().with(PART, part).with(FACING, direction));
         world.updateNeighbors(pos, Blocks.AIR);
-        state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
+        state.updateNeighbors(world, pos, Block.NOTIFY_LISTENERS);
     }
-
-
     @Override
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        if (world instanceof ServerWorld) {
-            ServerWorld serverWorld = (ServerWorld)world;
-            this.update(state, serverWorld, pos);
-        }
-    }
-
-    public void update(BlockState state, ServerWorld world, BlockPos pos) {
-        boolean bl = world.isReceivingRedstonePower(pos);
-        if (bl == state.get(POWERED)) {
+        Direction direction = state.get(FACING);
+        MultiBlockUtil.MultiblockPart multiblockPart = state.get(PART);
+        if (world.isClient) {
             return;
         }
-        BlockState blockState = state;
-        if (!state.get(POWERED).booleanValue()) {
-            world.playSound(null, pos, (blockState = (BlockState)blockState.cycle(COLOR)).get(POWERED) != false ? SoundEvents.BLOCK_COPPER_BULB_TURN_ON : SoundEvents.BLOCK_COPPER_BULB_TURN_OFF, SoundCategory.BLOCKS);
+        boolean bl = state.get(POWERED);
+        if (bl != world.isReceivingRedstonePower(pos)) {
+            if (bl) {
+                world.scheduleBlockTick(pos, this, 4);
+                world.setBlockState(pos, (BlockState)state.cycle(POWERED), Block.NOTIFY_LISTENERS);
+            } else {
+                if (multiblockPart == MultiBlockUtil.MultiblockPart.BOTTOM) {
+                    world.setBlockState(pos, (BlockState) state.cycle(COLOR).with(POWERED, true), Block.NOTIFY_LISTENERS);
+                    world.setBlockState(pos.offset(Direction.UP, 2), (BlockState)state.cycle(COLOR).with(PART, MultiBlockUtil.MultiblockPart.TOP).with(FACING, direction), Block.NOTIFY_LISTENERS);
+                }
+            }
         }
-        world.setBlockState(pos, (BlockState)state.cycle(COLOR), Block.NOTIFY_ALL);
+    }
+    @Override
+    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (world.isReceivingRedstonePower(pos)) {
+            world.setBlockState(pos, (BlockState)state.cycle(POWERED), Block.NOTIFY_LISTENERS);
+            ParticleUtil.spawnParticle(state.get(FACING).getAxis(), world, pos, 0.125, ParticleTypes.ELECTRIC_SPARK, UniformIntProvider.create(1, 2));
         }
+    }
+    @Override
+    public boolean hasComparatorOutput(BlockState state) {
+        return true;
+    }
 
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        if (state.get(COLOR) == RED && state.get(POWERED)) {
+            return 1;
+        } else if (state.get(COLOR) == YELLOW  && state.get(POWERED)) {
+            return 8;
+        } else if (state.get(COLOR) == GREEN  && state.get(POWERED)) {
+            return 15;
+        }
+        return 0;
+    }
         @Override
     public long getRenderingSeed(BlockState state, BlockPos pos) {
         return MathHelper.hashCode(pos.getX(), pos.down(state.get(PART) == MultiBlockUtil.MultiblockPart.BOTTOM ? 0 : 1).getY(), pos.getZ());
+    }
+    protected static final VoxelShape SHAPE_TOP = Stream.of(
+            Block.createCuboidShape(6, -16, 6, 10, -1, 10),
+            Block.createCuboidShape(6, 11, 6, 10, 23, 10),
+            Block.createCuboidShape(6, 21, 6, 10, 25, 10),
+            Block.createCuboidShape(6, -1, 6, 10, 11, 10),
+            Block.createCuboidShape(5, 20, 5, 11, 24, 11)
+    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    protected static final VoxelShape SHAPE_BOTTOM = Stream.of(
+            Block.createCuboidShape(4, 10, 4, 12, 20, 12),
+            Block.createCuboidShape(2, 8, 2, 14, 10, 14),
+            Block.createCuboidShape(0, 0, 0, 16, 8, 16)
+    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        switch (state.get(PART)) {
+            case TOP: {
+                return SHAPE_TOP;
+            }
+            case BOTTOM: {
+                return SHAPE_BOTTOM;
+            }
+        }
+        return SHAPE_BOTTOM;
     }
 }

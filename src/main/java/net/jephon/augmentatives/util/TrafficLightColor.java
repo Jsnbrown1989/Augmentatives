@@ -1,5 +1,6 @@
 package net.jephon.augmentatives.util;
 
+import net.minecraft.state.property.Property;
 import net.minecraft.util.StringIdentifiable;
 
 public enum TrafficLightColor implements StringIdentifiable {

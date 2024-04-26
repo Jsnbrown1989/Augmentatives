@@ -1083,6 +1083,7 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_SIGN_GUARD_RAIL_CAUTION);
                         entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_CONE);
                         entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_BARREL);
+                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_LIGHT);
 
                     }).build());
     public static void registerItemGroups() {

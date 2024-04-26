@@ -82,6 +82,8 @@ public class AugmentativesClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUILDING_TAR_TAR_BLOCK, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUILDING_TAR_OIL_BLOCK, RenderLayer.getTranslucent());
+        
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OUTSIDE_SIGN_TRAFFIC_LIGHT, RenderLayer.getTranslucent());
     }
 
     private static class EmptyRenderer extends EntityRenderer<SeatEntity> {
