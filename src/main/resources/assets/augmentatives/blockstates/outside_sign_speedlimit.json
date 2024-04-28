@@ -1,0 +1,97 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "augmentatives:block/outside/sign/speed_limit/bottom"
+    },
+    "facing=west,part=top,speed=15": {
+      "model": "augmentatives:block/outside/sign/speed_limit/15",
+      "y": 270
+    },
+    "facing=south,part=top,speed=15": {
+      "model": "augmentatives:block/outside/sign/speed_limit/15"
+    },
+    "facing=east,part=top,speed=15": {
+      "model": "augmentatives:block/outside/sign/speed_limit/15",
+      "y": 90
+    },
+    "facing=north,part=top,speed=15": {
+      "model": "augmentatives:block/outside/sign/speed_limit/15",
+      "y": 180
+    },
+    "facing=west,part=top,speed=25": {
+      "model": "augmentatives:block/outside/sign/speed_limit/25",
+      "y": 270
+    },
+    "facing=south,part=top,speed=25": {
+      "model": "augmentatives:block/outside/sign/speed_limit/25"
+    },
+    "facing=east,part=top,speed=25": {
+      "model": "augmentatives:block/outside/sign/speed_limit/25",
+      "y": 90
+    },
+    "facing=north,part=top,speed=25": {
+      "model": "augmentatives:block/outside/sign/speed_limit/25",
+      "y": 180
+    },
+    "facing=west,part=top,speed=35": {
+      "model": "augmentatives:block/outside/sign/speed_limit/35",
+      "y": 270
+    },
+    "facing=south,part=top,speed=35": {
+      "model": "augmentatives:block/outside/sign/speed_limit/35"
+    },
+    "facing=east,part=top,speed=35": {
+      "model": "augmentatives:block/outside/sign/speed_limit/35",
+      "y": 90
+    },
+    "facing=north,part=top,speed=35": {
+      "model": "augmentatives:block/outside/sign/speed_limit/35",
+      "y": 180
+    },
+    "facing=west,part=top,speed=45": {
+      "model": "augmentatives:block/outside/sign/speed_limit/45",
+      "y": 270
+    },
+    "facing=south,part=top,speed=45": {
+      "model": "augmentatives:block/outside/sign/speed_limit/45"
+    },
+    "facing=east,part=top,speed=45": {
+      "model": "augmentatives:block/outside/sign/speed_limit/45",
+      "y": 90
+    },
+    "facing=north,part=top,speed=45": {
+      "model": "augmentatives:block/outside/sign/speed_limit/45",
+      "y": 180
+    },
+    "facing=west,part=top,speed=55": {
+      "model": "augmentatives:block/outside/sign/speed_limit/55",
+      "y": 270
+    },
+    "facing=south,part=top,speed=55": {
+      "model": "augmentatives:block/outside/sign/speed_limit/55"
+    },
+    "facing=east,part=top,speed=55": {
+      "model": "augmentatives:block/outside/sign/speed_limit/55",
+      "y": 90
+    },
+    "facing=north,part=top,speed=55": {
+      "model": "augmentatives:block/outside/sign/speed_limit/55",
+      "y": 180
+    },
+    "facing=west,part=top,speed=65": {
+      "model": "augmentatives:block/outside/sign/speed_limit/65",
+      "y": 270
+    },
+    "facing=south,part=top,speed=65": {
+      "model": "augmentatives:block/outside/sign/speed_limit/65"
+    },
+    "facing=east,part=top,speed=65": {
+      "model": "augmentatives:block/outside/sign/speed_limit/65",
+      "y": 90
+    },
+    "facing=north,part=top,speed=65": {
+      "model": "augmentatives:block/outside/sign/speed_limit/65",
+      "y": 180
+    }
+  }
+}

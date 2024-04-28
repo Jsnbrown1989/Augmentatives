@@ -1079,6 +1079,7 @@ public class TrafficItemGroups {
 
                         entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
                         entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
+                        entries.add(ModBlocks.OUTSIDE_SIGN_SPEEDLIMIT);
                         entries.add(ModBlocks.OUTSIDE_SIGN_TOWN);
                         entries.add(ModBlocks.OUTSIDE_SIGN_GUARD_RAIL_CAUTION);
                         entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_CONE);

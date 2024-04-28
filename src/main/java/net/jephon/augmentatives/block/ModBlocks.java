@@ -2819,6 +2819,11 @@ public class ModBlocks {
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_SIGN_STOP = registerBlock("outside_sign_stop",
             new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_SIGN_SPEEDLIMIT = registerBlock("outside_sign_speedlimit",
+            new SpeedLimitSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
     public static final Block OUTSIDE_SIGN_TRAFFIC_LIGHT = registerBlock("outside_sign_traffic_light",
             new TrafficLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
