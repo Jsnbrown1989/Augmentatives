@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/cast_iron/smooth_slab_bottom"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/cast_iron/smooth_block"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/cast_iron/smooth_slab_top"
+    }
+  }
+}

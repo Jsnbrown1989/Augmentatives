@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/cast_iron/slab_exposed_bottom"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/cast_iron/block_exposed"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/cast_iron/slab_exposed_top"
+    }
+  }
+}

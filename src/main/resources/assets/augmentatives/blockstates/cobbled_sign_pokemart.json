@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "augmentatives:block/cobbled/pokemart/bottom"
+    },
+    "facing=east,part=top": {
+      "model": "augmentatives:block/cobbled/pokemart/sign_top",
+      "y": 270
+    },
+    "facing=north,part=top": {
+      "model": "augmentatives:block/cobbled/pokemart/sign_top",
+      "y": 180
+    },
+    "facing=west,part=top": {
+      "model": "augmentatives:block/cobbled/pokemart/sign_top",
+      "y": 90
+    },
+    "facing=south,part=top": {
+      "model": "augmentatives:block/cobbled/pokemart/sign_top"
+    }
+  }
+}

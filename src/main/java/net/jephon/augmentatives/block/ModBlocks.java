@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.building.*;
 import net.jephon.augmentatives.block.common.PaintBucketBlock;
+import net.jephon.augmentatives.block.decor.cobbled.PokeCenterSign;
+import net.jephon.augmentatives.block.decor.cobbled.PokeMartSign;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.jephon.augmentatives.block.decor.traffic.*;
@@ -2823,7 +2825,6 @@ public class ModBlocks {
     public static final Block OUTSIDE_SIGN_SPEEDLIMIT = registerBlock("outside_sign_speedlimit",
             new SpeedLimitSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
-
     public static final Block OUTSIDE_SIGN_TRAFFIC_LIGHT = registerBlock("outside_sign_traffic_light",
             new TrafficLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
@@ -2854,6 +2855,10 @@ public class ModBlocks {
     public static final Block OUTSIDE_STREETLIGHT = registerBlock("outside_streetlight",
             new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
+    public static final Block OUTSIDE_STREETLIGHT_REDSTONE = registerBlock("outside_streetlight_redstone",
+            new StreetLightRedstoneBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
     //                                                                                                             //
     //                                             Tar / Oil                                                       //
@@ -2870,12 +2875,12 @@ public class ModBlocks {
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
     //                                                                                                             //
-    //                                             Paint Bucket                                                       //
+    //                                             Workstations                                                       //
     //                                                                                                             //
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    // Cast Iron Block
+    // Paint Bucket
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_BUCKET_PAINT = registerBlock("outside_bucket_paint",
             new PaintBucketBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
@@ -2898,6 +2903,64 @@ public class ModBlocks {
             new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
     public static final Block BUILDING_CAST_IRON_BLOCK_RUSTED = registerBlock("building_cast_iron_block_rusted",
             new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+    public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK = registerBlock("building_cast_iron_bricks_block",
+            new CastIronBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK_EXPOSED = registerBlock("building_cast_iron_bricks_block_exposed",
+            new CastIronBlock(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK_WEATHERED = registerBlock("building_cast_iron_bricks_block_weathered",
+            new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK_RUSTED = registerBlock("building_cast_iron_bricks_block_rusted",
+            new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+
+    public static final Block BUILDING_CAST_IRON_SMOOTH_BLOCK = registerBlock("building_cast_iron_smooth_block",
+            new CastIronBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_BLOCK_EXPOSED = registerBlock("building_cast_iron_smooth_block_exposed",
+            new CastIronBlock(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_BLOCK_WEATHERED = registerBlock("building_cast_iron_smooth_block_weathered",
+            new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_BLOCK_RUSTED = registerBlock("building_cast_iron_smooth_block_rusted",
+            new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+    public static final Block BUILDING_CAST_IRON_SMOOTH_SLAB = registerBlock("building_cast_iron_smooth_slab",
+            new CastIronSlab(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_SLAB_EXPOSED = registerBlock("building_cast_iron_smooth_slab_exposed",
+            new CastIronSlab(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_SLAB_WEATHERED = registerBlock("building_cast_iron_smooth_slab_weathered",
+            new CastIronSlab(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SMOOTH_SLAB_RUSTED = registerBlock("building_cast_iron_smooth_slab_rusted",
+            new CastIronSlab(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+
+    public static final Block BUILDING_CAST_IRON_SLAB = registerBlock("building_cast_iron_slab",
+            new CastIronSlab(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SLAB_EXPOSED = registerBlock("building_cast_iron_slab_exposed",
+            new CastIronSlab(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SLAB_WEATHERED = registerBlock("building_cast_iron_slab_weathered",
+            new CastIronSlab(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_SLAB_RUSTED = registerBlock("building_cast_iron_slab_rusted",
+            new CastIronSlab(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+    public static final Block BUILDING_CAST_IRON_BRICKS_SLAB = registerBlock("building_cast_iron_bricks_slab",
+            new CastIronSlab(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_SLAB_EXPOSED = registerBlock("building_cast_iron_bricks_slab_exposed",
+            new CastIronSlab(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_SLAB_WEATHERED = registerBlock("building_cast_iron_bricks_slab_weathered",
+            new CastIronSlab(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_BRICKS_SLAB_RUSTED = registerBlock("building_cast_iron_bricks_slab_rusted",
+            new CastIronSlab(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+    public static final Block BUILDING_CAST_IRON_GRATE = registerBlock("building_cast_iron_grate",
+            new CastIronBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_GRATE_EXPOSED = registerBlock("building_cast_iron_grate_exposed",
+            new CastIronBlock(Rustable.RustLevel.EXPOSED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_GRATE_WEATHERED = registerBlock("building_cast_iron_grate_weathered",
+            new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block BUILDING_CAST_IRON_GRATE_RUSTED = registerBlock("building_cast_iron_grate_rusted",
+            new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
+
+
     public static final Block BUILDING_CAST_IRON_BEAM = registerBlock("building_cast_iron_beam",
             new CastIronBeamBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
     public static final Block BUILDING_CAST_IRON_BEAM_EXPOSED = registerBlock("building_cast_iron_beam_exposed",
@@ -2907,6 +2970,30 @@ public class ModBlocks {
     public static final Block BUILDING_CAST_IRON_BEAM_RUSTED = registerBlock("building_cast_iron_beam_rusted",
             new CastIronBeamBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
 
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+    //                                                                                                             //
+    //                                             Cobbled                                                         //
+    //                                                                                                             //
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Signs
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block COBBLED_SIGN_POKECENTER = registerBlock("cobbled_sign_pokecenter",
+            new PokeCenterSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block COBBLED_SIGN_POKEMART = registerBlock("cobbled_sign_pokemart",
+            new PokeMartSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Unown Blocks
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block COBBLED_UNOWN_GRANITE_A = registerBlock("cobbled_unown_granite_a",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block COBBLED_UNOWN_GRANITE_B = registerBlock("cobbled_unown_granite_b",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block COBBLED_UNOWN_GRANITE_C = registerBlock("cobbled_unown_granite_c",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
 
     private static Block registerBlock(String name, Block block) {

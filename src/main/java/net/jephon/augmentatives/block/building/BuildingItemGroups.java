@@ -212,10 +212,34 @@ public class BuildingItemGroups {
                         entries.add(ModBlocks.BUILDING_SURFACE_DEEPSLATE);
                         entries.add(ModBlocks.BUILDING_TAR_TAR_BLOCK);
                         entries.add(ModBlocks.BUILDING_TAR_OIL_BLOCK);
+
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_EXPOSED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_WEATHERED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BLOCK_RUSTED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_BLOCK);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_BLOCK_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_BLOCK_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_BLOCK_RUSTED);
+
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_BLOCK);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_BLOCK_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_BLOCK_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_BLOCK_RUSTED);
+
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_SLAB);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_SLAB_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_SLAB_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SMOOTH_SLAB_RUSTED);
+
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SLAB);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SLAB_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SLAB_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_SLAB_RUSTED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_SLAB);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_SLAB_EXPOSED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_SLAB_WEATHERED);
+                        entries.add(ModBlocks.BUILDING_CAST_IRON_BRICKS_SLAB_RUSTED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM_EXPOSED);
                         entries.add(ModBlocks.BUILDING_CAST_IRON_BEAM_WEATHERED);
