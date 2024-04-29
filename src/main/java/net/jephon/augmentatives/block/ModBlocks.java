@@ -3204,6 +3204,13 @@ public class ModBlocks {
     public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",
             new PokeCenterHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
+    public static final Block COBBLED_SIGN_POKEMART_HORIZONAL = registerBlock("cobbled_sign_pokemart_horizonal",
+            new PokeMartHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",
+            new PokeCenterHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Unown Blocks
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
