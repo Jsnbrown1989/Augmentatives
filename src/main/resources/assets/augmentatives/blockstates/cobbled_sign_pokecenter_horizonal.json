@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "augmentatives:block/cobbled/pokecenter/sign_horizonal",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "augmentatives:block/cobbled/pokecenter/sign_horizonal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "augmentatives:block/cobbled/pokecenter/sign_horizonal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "augmentatives:block/cobbled/pokecenter/sign_horizonal"
+    }
+  }
+}

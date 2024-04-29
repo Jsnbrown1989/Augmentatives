@@ -5,9 +5,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.building.*;
+import net.jephon.augmentatives.block.cobbled.decor.*;
 import net.jephon.augmentatives.block.common.PaintBucketBlock;
-import net.jephon.augmentatives.block.decor.cobbled.PokeCenterSign;
-import net.jephon.augmentatives.block.decor.cobbled.PokeMartSign;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.*;
 import net.jephon.augmentatives.block.decor.traffic.*;
@@ -2985,15 +2984,22 @@ public class ModBlocks {
     public static final Block COBBLED_SIGN_POKEMART = registerBlock("cobbled_sign_pokemart",
             new PokeMartSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
+    public static final Block COBBLED_SIGN_POKEMART_HORIZONAL = registerBlock("cobbled_sign_pokemart_horizonal",
+            new PokeMartHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+    public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",
+            new PokeCenterHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Unown Blocks
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block COBBLED_UNOWN_GRANITE_A = registerBlock("cobbled_unown_granite_a",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+            new UnownBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_UNOWN_GRANITE_B = registerBlock("cobbled_unown_granite_b",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+            new UnownBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_UNOWN_GRANITE_C = registerBlock("cobbled_unown_granite_c",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
+            new UnownBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -24,11 +24,13 @@ public class CobbledItemGroups {
                         // PokeCenter
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         entries.add(ModBlocks.COBBLED_SIGN_POKECENTER);
+                        entries.add(ModBlocks.COBBLED_SIGN_POKECENTER_HORIZONAL);
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // PokeMart
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         entries.add(ModBlocks.COBBLED_SIGN_POKEMART);
+                        entries.add(ModBlocks.COBBLED_SIGN_POKEMART_HORIZONAL);
 
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

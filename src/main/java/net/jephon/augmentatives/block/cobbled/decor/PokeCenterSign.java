@@ -1,4 +1,4 @@
-package net.jephon.augmentatives.block.decor.cobbled;
+package net.jephon.augmentatives.block.cobbled.decor;
 
 import com.mojang.serialization.MapCodec;
 import net.jephon.augmentatives.block.ModBlocks;
@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.stream.Stream;
 
 
-public class PokeMartSign
+public class PokeCenterSign
         extends Block {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<MultiBlockUtil.MultiblockPart> PART = MultiBlockProperties.MULTIBLOCK_PART;
@@ -39,7 +39,7 @@ public class PokeMartSign
     protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
         return null;
     }
-    public PokeMartSign(Settings settings) {
+    public PokeCenterSign(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH).with(PART, MultiBlockUtil.MultiblockPart.HEAD));
     }
@@ -94,7 +94,7 @@ public class PokeMartSign
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (!world.isClient) {
             if (player.isCreative()) {
-                PokeMartSign.onBreakInCreative(world, pos, state, player);
+                PokeCenterSign.onBreakInCreative(world, pos, state, player);
             } else {
                 BlockPos blockPos;
                 BlockState blockState;
@@ -128,7 +128,7 @@ public class PokeMartSign
     }
 
     private void placeAdditionalBlock(World world, BlockPos pos, BlockPos originPos, Direction direction, BlockState state, MultiBlockUtil.MultiblockPart part) {
-        world.setBlockState(pos, ModBlocks.COBBLED_SIGN_POKEMART.getDefaultState().with(PART, part).with(FACING, direction));
+        world.setBlockState(pos, ModBlocks.COBBLED_SIGN_POKECENTER.getDefaultState().with(PART, part).with(FACING, direction));
         world.updateNeighbors(pos, Blocks.AIR);
         state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
     }
