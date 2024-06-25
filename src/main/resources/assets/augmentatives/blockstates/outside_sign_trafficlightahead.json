@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "augmentatives:block/outside/sign/trafficlightahead/sign_bottom"
+    },
+    "facing=east,part=top": {
+      "model": "augmentatives:block/outside/sign/trafficlightahead/sign_top",
+      "y": 270
+    },
+    "facing=north,part=top": {
+      "model": "augmentatives:block/outside/sign/trafficlightahead/sign_top",
+      "y": 180
+    },
+    "facing=west,part=top": {
+      "model": "augmentatives:block/outside/sign/trafficlightahead/sign_top",
+      "y": 90
+    },
+    "facing=south,part=top": {
+      "model": "augmentatives:block/outside/sign/trafficlightahead/sign_top"
+    }
+  }
+}

@@ -16,6 +16,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+        // Modded Climbable
+        getOrCreateTagBuilder(ModBlockTags.CLIMBABLE)
+                .add(ModBlocks.OUTSIDE_MANHOLE_COVER)
+                .add(ModBlocks.OUTSIDE_MANHOLE_TUNNEL)
+        ;
+
         //PICKAXE MINEABLE BLOCKS
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
         ;
@@ -62,11 +68,35 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OUTSIDE_BEACHCHAIR_CRIMSON)
         ;
 
+        //Manholes
+        getOrCreateTagBuilder(ModBlockTags.MANHOLES)
+                .add(ModBlocks.OUTSIDE_MANHOLE_COVER)
+                .add(ModBlocks.OUTSIDE_MANHOLE_TUNNEL)
+        ;
+
+        //Tintables
+        getOrCreateTagBuilder(ModBlockTags.TINTABLE)
+                .add(ModBlocks.OAK_HEDGE)
+                .add(ModBlocks.BIRCH_HEDGE)
+                .add(ModBlocks.JUNGLE_HEDGE)
+                .add(ModBlocks.ACACIA_HEDGE)
+                .add(ModBlocks.AZALEA_HEDGE)
+                .add(ModBlocks.DARK_OAK_HEDGE)
+                .add(ModBlocks.MANGROVE_HEDGE)
+                .add(ModBlocks.SPRUCE_HEDGE)
+                .add(ModBlocks.OAK_PLANTER)
+                .add(ModBlocks.BIRCH_PLANTER)
+                .add(ModBlocks.JUNGLE_PLANTER)
+                .add(ModBlocks.ACACIA_PLANTER)
+                .add(ModBlocks.AZALEA_PLANTER)
+                .add(ModBlocks.DARK_OAK_PLANTER)
+                .add(ModBlocks.MANGROVE_PLANTER)
+                .add(ModBlocks.SPRUCE_PLANTER)
+        ;
+
         //GUARDRAILS
         getOrCreateTagBuilder(ModBlockTags.GUARDRAILS)
         ;
-
-
         //SEATS
         getOrCreateTagBuilder(ModBlockTags.SEATS)
                 .forceAddTag(ModBlockTags.BAR_CHAIRS)
@@ -78,5 +108,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(ModBlockTags.COUNTER_DOORS)
                 .forceAddTag(ModBlockTags.COUNTER_DRAWERS)
         ;
+
     }
 }

@@ -8,11 +8,16 @@ import net.jephon.augmentatives.block.building.*;
 import net.jephon.augmentatives.block.cobbled.decor.*;
 import net.jephon.augmentatives.block.common.PaintBucketBlock;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
-import net.jephon.augmentatives.block.decor.furniture.outside.*;
+import net.jephon.augmentatives.block.decor.furniture.outside.BeachChairBlock;
+import net.jephon.augmentatives.block.decor.furniture.outside.GuardRailBlock;
 import net.jephon.augmentatives.block.decor.traffic.*;
+import net.jephon.augmentatives.block.organic.decor.HedgeBlock;
+import net.jephon.augmentatives.block.organic.decor.PlanterBlock;
+import net.jephon.augmentatives.block.organic.decor.WoodStackBlock;
 import net.jephon.augmentatives.util.Dryable;
 import net.jephon.augmentatives.util.Rustable;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -43,7 +48,6 @@ public class ModBlocks {
             new CounterBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_ACACIA_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
     public static final Block KITCHEN_COUNTER_DOORS_ACACIA_TUFF = registerBlock("kitchen_counter_doors_acacia_tuff",
             new CounterBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_ACACIA_WOOD).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Kitchen Counter with Doors - Birch
@@ -2820,14 +2824,24 @@ public class ModBlocks {
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_SIGN_STOP = registerBlock("outside_sign_stop",
             new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-
+    public static final Block OUTSIDE_SIGN_YIELD = registerBlock("outside_sign_yield",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_WRONGWAY = registerBlock("outside_sign_wrongway",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_NOPARKING = registerBlock("outside_sign_noparking",
+            new NoParkingSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_TRAFFICLIGHTAHEAD = registerBlock("outside_sign_trafficlightahead",
+            new TrafficLightAheadSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_DONOTENTER = registerBlock("outside_sign_donotenter",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_DEADEND = registerBlock("outside_sign_deadend",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_SIGN_CAUTION = registerBlock("outside_sign_caution",
+            new StopSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
     public static final Block OUTSIDE_SIGN_SPEEDLIMIT = registerBlock("outside_sign_speedlimit",
             new SpeedLimitSignBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-
     public static final Block OUTSIDE_SIGN_TRAFFIC_LIGHT = registerBlock("outside_sign_traffic_light",
             new TrafficLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-
-
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Location Signs
@@ -2845,17 +2859,28 @@ public class ModBlocks {
     public static final Block OUTSIDE_SIGN_TRAFFIC_BARREL = registerBlock("outside_sign_traffic_barrel",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
-
-
-
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Streetlights / Parklights
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block OUTSIDE_STREETLIGHT = registerBlock("outside_streetlight",
             new StreetLightBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
-
     public static final Block OUTSIDE_STREETLIGHT_REDSTONE = registerBlock("outside_streetlight_redstone",
             new StreetLightRedstoneBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).luminance(state -> 14).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+    //                                                                                                             //
+    //                                             Manhole                                                         //
+    //                                                                                                             //
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Manhole
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_MANHOLE_COVER = registerBlock("outside_manhole_cover",
+            new ManholeCoverBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_MANHOLE_TUNNEL = registerBlock("outside_manhole_tunnel",
+            new ManholeTunnelBlock(FabricBlockSettings.copyOf(Blocks.LADDER).strength(1f).sounds(BlockSoundGroup.LADDER).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
@@ -2869,6 +2894,9 @@ public class ModBlocks {
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block BUILDING_TAR_TAR_BLOCK = registerBlock("building_tar_tar_block",
             new TarBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).velocityMultiplier(0.5f).jumpVelocityMultiplier(0.6f).nonOpaque().slipperiness(0.8f).sounds(BlockSoundGroup.SLIME)));
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Oil Block
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     public static final Block BUILDING_TAR_OIL_BLOCK = registerBlock("building_tar_oil_block",
             new OilBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).nonOpaque().slipperiness(0.989f).sounds(BlockSoundGroup.SLIME)));
 
@@ -2902,7 +2930,6 @@ public class ModBlocks {
             new CastIronBlock(Rustable.RustLevel.WEATHERED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
     public static final Block BUILDING_CAST_IRON_BLOCK_RUSTED = registerBlock("building_cast_iron_block_rusted",
             new CastIronBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
-
     public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK = registerBlock("building_cast_iron_bricks_block",
             new CastIronBlock(Rustable.RustLevel.UNAFFECTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
     public static final Block BUILDING_CAST_IRON_BRICKS_BLOCK_EXPOSED = registerBlock("building_cast_iron_bricks_block_exposed",
@@ -2969,6 +2996,72 @@ public class ModBlocks {
     public static final Block BUILDING_CAST_IRON_BEAM_RUSTED = registerBlock("building_cast_iron_beam_rusted",
             new CastIronBeamBlock(Rustable.RustLevel.RUSTED,AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).sounds(BlockSoundGroup.ANVIL)));
 
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Paths
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    public static final Block BUILDING_PATH_DIRTYCOBBLESTONE = registerBlock("building_path_dirtycobblestone",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
+    public static final Block BUILDING_PATH_SANDYCOBBLESTONE = registerBlock("building_path_sandycobblestone",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BUILDING_PATH_SANDYDIRT = registerBlock("building_path_sandydirt",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Hedges
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    public static final Block OAK_HEDGE = registerBlock("building_hedge_oak", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block SPRUCE_HEDGE = registerBlock("building_hedge_spruce", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block BIRCH_HEDGE = registerBlock("building_hedge_birch", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block JUNGLE_HEDGE = registerBlock("building_hedge_jungle", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block ACACIA_HEDGE = registerBlock("building_hedge_acacia", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block CHERRY_HEDGE = registerBlock("building_hedge_cherry", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block DARK_OAK_HEDGE = registerBlock("building_hedge_dark_oak", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block MANGROVE_HEDGE = registerBlock("building_hedge_mangrove", ModBlocks.createHedgeBlock(BlockSoundGroup.GRASS));
+    public static final Block AZALEA_HEDGE = registerBlock("building_hedge_azalea", ModBlocks.createHedgeBlock(BlockSoundGroup.AZALEA_LEAVES));
+    public static final Block FLOWERING_AZALEA_HEDGE = registerBlock("building_hedge_flowering_azalea", ModBlocks.createHedgeBlock(BlockSoundGroup.AZALEA_LEAVES));
+    
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Planters
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    public static final Block OAK_PLANTER = registerBlock("building_planter_oak", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block SPRUCE_PLANTER = registerBlock("building_planter_spruce", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block BIRCH_PLANTER = registerBlock("building_planter_birch", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block JUNGLE_PLANTER = registerBlock("building_planter_jungle", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block ACACIA_PLANTER = registerBlock("building_planter_acacia", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block CHERRY_PLANTER = registerBlock("building_planter_cherry", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block DARK_OAK_PLANTER = registerBlock("building_planter_dark_oak", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block MANGROVE_PLANTER = registerBlock("building_planter_mangrove", ModBlocks.createPlanterBlock(BlockSoundGroup.GRASS));
+    public static final Block AZALEA_PLANTER = registerBlock("building_planter_azalea", ModBlocks.createPlanterBlock(BlockSoundGroup.AZALEA_LEAVES));
+    public static final Block FLOWERING_AZALEA_PLANTER = registerBlock("building_planter_flowering_azalea", ModBlocks.createPlanterBlock(BlockSoundGroup.AZALEA_LEAVES));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Wood Stacks
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_WOODSTACK_OAK = registerBlock("outside_woodstack_oak",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_BIRCH = registerBlock("outside_woodstack_birch",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_SPRUCE = registerBlock("outside_woodstack_spruce",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_JUNGLE = registerBlock("outside_woodstack_jungle",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_DARK_OAK = registerBlock("outside_woodstack_dark_oak",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_CHERRY = registerBlock("outside_woodstack_cherry",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_MANGROVE = registerBlock("outside_woodstack_mangrove",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_ACACIA = registerBlock("outside_woodstack_acacia",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
+
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
     //                                                                                                             //
@@ -2983,13 +3076,10 @@ public class ModBlocks {
             new PokeCenterSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_SIGN_POKEMART = registerBlock("cobbled_sign_pokemart",
             new PokeMartSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
-
     public static final Block COBBLED_SIGN_POKEMART_HORIZONAL = registerBlock("cobbled_sign_pokemart_horizonal",
             new PokeMartHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",
             new PokeCenterHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
-
-
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Unown Blocks
@@ -3002,6 +3092,12 @@ public class ModBlocks {
             new UnownBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
 
 
+    public static Block createHedgeBlock(BlockSoundGroup soundGroup) {
+        return new HedgeBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(0.2f).ticksRandomly().sounds(soundGroup).nonOpaque().allowsSpawning(Blocks::canSpawnOnLeaves).suffocates(Blocks::never).blockVision(Blocks::never).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never));
+    }
+    public static Block createPlanterBlock(BlockSoundGroup soundGroup) {
+        return new PlanterBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).strength(0.2f).ticksRandomly().sounds(soundGroup).nonOpaque().allowsSpawning(Blocks::canSpawnOnLeaves).suffocates(Blocks::never).blockVision(Blocks::never).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never));
+    }
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Augmentatives.MOD_ID, name), block);

@@ -827,8 +827,9 @@
   "block.augmentatives.building_tar_tar_block": "Tar Block",
   "block.augmentatives.building_tar_oil_block": "Oil Block",
 
-  "itemGroup.kitchenAugmentatives": "Kitchen Decor- Augmentatives",
-  "itemGroup.exteriorAugmentatives": "Exterior Decor - Augmentatives",
-  "itemGroup.trafficAugmentatives": "Traffic - Augmentatives",
-  "itemGroup.buildingAugmentatives": "Building Blocks - Augmentatives"
+  "itemGroup.furnitureAugmentatives": "Furniture Decor - Augmentatives",
+  "itemGroup.trafficAugmentatives": "Traffic Decor - Augmentatives",
+  "itemGroup.buildingAugmentatives": "Building Blocks - Augmentatives",
+  "itemGroup.organicsAugmentatives": "Organics - Augmentatives",
+  "itemGroup.cobbledAugmentatives": "Cobblemon Blocks - Augmentatives"
 }

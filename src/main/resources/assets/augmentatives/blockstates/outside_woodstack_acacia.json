@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/woodstack/acacia"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/woodstack/acacia_full"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/woodstack/acacia_top"
+    }
+  }
+}

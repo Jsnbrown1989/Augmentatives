@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/woodstack/spruce"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/woodstack/spruce_full"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/woodstack/spruce_top"
+    }
+  }
+}

@@ -1,13 +1,11 @@
 package net.jephon.augmentatives;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.jephon.augmentatives.block.ModBlocks;
-import net.jephon.augmentatives.block.building.BuildingItemGroups;
-import net.jephon.augmentatives.block.cobbled.CobbledItemGroups;
-import net.jephon.augmentatives.block.decor.furniture.outside.OutsideItemGroups;
-import net.jephon.augmentatives.block.decor.traffic.TrafficItemGroups;
-import net.jephon.augmentatives.block.decor.furniture.kitchen.KitchenItemGroups;
+import net.jephon.augmentatives.item.BuildingItemGroups;
+import net.jephon.augmentatives.item.CobbledItemGroups;
+import net.jephon.augmentatives.item.OrganicItemGroups;
+import net.jephon.augmentatives.item.TrafficItemGroups;
 import net.jephon.augmentatives.item.ModItemGroup;
 import net.jephon.augmentatives.item.ModItems;
 import net.jephon.augmentatives.sound.ModSounds;
@@ -24,14 +22,15 @@ public class Augmentatives implements ModInitializer {
 		TrafficItemGroups.registerItemGroups();
 		BuildingItemGroups.registerItemGroups();
 		CobbledItemGroups.registerItemGroups();
+		OrganicItemGroups.registerItemGroups();
+
+		// Prep for Future Versions
+		// furnitureItemGroups.registerItemGroups();
 
         // Always Last
 		ModItemGroup.registerItemGroups();
 
 
-		// Prep for Future Versions
-		// KitchenItemGroups.registerItemGroups();
-		// OutsideItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
