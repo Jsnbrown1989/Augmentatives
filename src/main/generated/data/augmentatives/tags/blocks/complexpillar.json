@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "augmentatives:outside_pillar_oak",
+    "augmentatives:outside_pillar_acacia",
+    "augmentatives:outside_pillar_mangrove",
+    "augmentatives:outside_pillar_cherry",
+    "augmentatives:outside_pillar_dark_oak",
+    "augmentatives:outside_pillar_spruce",
+    "augmentatives:outside_pillar_jungle",
+    "augmentatives:outside_pillar_birch"
+  ]
+}
