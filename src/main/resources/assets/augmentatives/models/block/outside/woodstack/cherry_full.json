@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "block/stripped_cherry_log_top",
-		"2": "block/stripped_cherry_log",
-		"particle": "block/stripped_cherry_log"
+		"1": "block/cherry_log_top",
+		"2": "block/cherry_log",
+		"particle": "block/cherry_log"
 	},
 	"elements": [
 		{

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/woodstack/stripped_dark_oak"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/woodstack/stripped_dark_oak_full"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/woodstack/stripped_dark_oak_top"
+    }
+  }
+}

@@ -33,6 +33,14 @@ public class OrganicItemGroups {
                         entries.add(ModBlocks.OUTSIDE_WOODSTACK_DARK_OAK);
                         entries.add(ModBlocks.OUTSIDE_WOODSTACK_MANGROVE);
 
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_OAK);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_WOODSTACK_STRIPPED_MANGROVE);
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Hedges
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -60,6 +68,59 @@ public class OrganicItemGroups {
                         entries.add(ModBlocks.MANGROVE_PLANTER);
                         entries.add(ModBlocks.AZALEA_PLANTER);
                         entries.add(ModBlocks.FLOWERING_AZALEA_PLANTER);
+
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Log Fence
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_FENCE_OAK);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_FENCE_MANGROVE);
+                        
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_OAK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_MANGROVE);
+
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_OAK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_MANGROVE);
+
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_OAK_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_DARK_OAK_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_BIRCH_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_SPRUCE_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_ACACIA_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_JUNGLE_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_CHERRY_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_MANGROVE_THICK);
+
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_OAK_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_BIRCH_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_SPRUCE_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_ACACIA_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_JUNGLE_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_CHERRY_THICK);
+                        entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_MANGROVE_THICK);
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Statues
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_STATUE_POKEBALL);
+                        entries.add(ModBlocks.OUTSIDE_STATUE_RHYDON);
                         
                     }).build());
     public static void registerItemGroups() {

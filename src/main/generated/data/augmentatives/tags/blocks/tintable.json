@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "augmentatives:building_hedge_oak",
+    "augmentatives:building_hedge_birch",
+    "augmentatives:building_hedge_jungle",
+    "augmentatives:building_hedge_acacia",
+    "augmentatives:building_hedge_azalea",
+    "augmentatives:building_hedge_dark_oak",
+    "augmentatives:building_hedge_mangrove",
+    "augmentatives:building_hedge_spruce",
+    "augmentatives:building_planter_oak",
+    "augmentatives:building_planter_birch",
+    "augmentatives:building_planter_jungle",
+    "augmentatives:building_planter_acacia",
+    "augmentatives:building_planter_azalea",
+    "augmentatives:building_planter_dark_oak",
+    "augmentatives:building_planter_mangrove",
+    "augmentatives:building_planter_spruce"
+  ]
+}

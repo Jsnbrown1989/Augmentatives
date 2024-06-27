@@ -10,10 +10,10 @@ import net.jephon.augmentatives.block.common.PaintBucketBlock;
 import net.jephon.augmentatives.block.decor.furniture.kitchen.CounterBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.BeachChairBlock;
 import net.jephon.augmentatives.block.decor.furniture.outside.GuardRailBlock;
+import net.jephon.augmentatives.block.decor.garden.PokeballStatueBlock;
+import net.jephon.augmentatives.block.decor.garden.RhydonStatueBlock;
 import net.jephon.augmentatives.block.decor.traffic.*;
-import net.jephon.augmentatives.block.organic.decor.HedgeBlock;
-import net.jephon.augmentatives.block.organic.decor.PlanterBlock;
-import net.jephon.augmentatives.block.organic.decor.WoodStackBlock;
+import net.jephon.augmentatives.block.organic.decor.*;
 import net.jephon.augmentatives.util.Dryable;
 import net.jephon.augmentatives.util.Rustable;
 import net.minecraft.block.*;
@@ -3008,6 +3008,13 @@ public class ModBlocks {
     public static final Block BUILDING_PATH_SANDYDIRT = registerBlock("building_path_sandydirt",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block BUILDING_PATH_SANDYGRAVEL = registerBlock("building_path_sandygravel",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BUILDING_PATH_DIRTYGRAVEL = registerBlock("building_path_dirtygravel",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.STONE)));
+
+
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Hedges
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -3059,6 +3066,122 @@ public class ModBlocks {
     public static final Block OUTSIDE_WOODSTACK_ACACIA = registerBlock("outside_woodstack_acacia",
             new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_OAK = registerBlock("outside_woodstack_stripped_oak",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_BIRCH = registerBlock("outside_woodstack_stripped_birch",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_SPRUCE = registerBlock("outside_woodstack_stripped_spruce",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_JUNGLE = registerBlock("outside_woodstack_stripped_jungle",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_DARK_OAK = registerBlock("outside_woodstack_stripped_dark_oak",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_CHERRY = registerBlock("outside_woodstack_stripped_cherry",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_MANGROVE = registerBlock("outside_woodstack_stripped_mangrove",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_WOODSTACK_STRIPPED_ACACIA = registerBlock("outside_woodstack_stripped_acacia",
+            new WoodStackBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Log Fence
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    public static final Block OUTSIDE_FENCE_OAK = registerBlock("outside_fence_oak",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_SPRUCE = registerBlock("outside_fence_spruce",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_BIRCH = registerBlock("outside_fence_birch",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_JUNGLE = registerBlock("outside_fence_jungle",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_ACACIA = registerBlock("outside_fence_acacia",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_DARK_OAK = registerBlock("outside_fence_dark_oak",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_MANGROVE = registerBlock("outside_fence_mangrove",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_FENCE_CHERRY = registerBlock("outside_fence_cherry",
+            new HorizonalFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_LOGFENCE_OAK = registerBlock("outside_logfence_oak",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_SPRUCE = registerBlock("outside_logfence_spruce",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_BIRCH = registerBlock("outside_logfence_birch",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_JUNGLE = registerBlock("outside_logfence_jungle",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_ACACIA = registerBlock("outside_logfence_acacia",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_DARK_OAK = registerBlock("outside_logfence_dark_oak",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_MANGROVE = registerBlock("outside_logfence_mangrove",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_CHERRY = registerBlock("outside_logfence_cherry",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_OAK = registerBlock("outside_logfence_stripped_oak",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_SPRUCE = registerBlock("outside_logfence_stripped_spruce",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_BIRCH = registerBlock("outside_logfence_stripped_birch",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_JUNGLE = registerBlock("outside_logfence_stripped_jungle",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_ACACIA = registerBlock("outside_logfence_stripped_acacia",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK = registerBlock("outside_logfence_stripped_dark_oak",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_MANGROVE = registerBlock("outside_logfence_stripped_mangrove",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_CHERRY = registerBlock("outside_logfence_stripped_cherry",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_LOGFENCE_OAK_THICK = registerBlock("outside_logfence_oak_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_SPRUCE_THICK = registerBlock("outside_logfence_spruce_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_BIRCH_THICK = registerBlock("outside_logfence_birch_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_JUNGLE_THICK = registerBlock("outside_logfence_jungle_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_ACACIA_THICK = registerBlock("outside_logfence_acacia_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_DARK_OAK_THICK = registerBlock("outside_logfence_dark_oak_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_MANGROVE_THICK = registerBlock("outside_logfence_mangrove_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_CHERRY_THICK = registerBlock("outside_logfence_cherry_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_OAK_THICK = registerBlock("outside_logfence_stripped_oak_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_SPRUCE_THICK = registerBlock("outside_logfence_stripped_spruce_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_BIRCH_THICK = registerBlock("outside_logfence_stripped_birch_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_JUNGLE_THICK = registerBlock("outside_logfence_stripped_jungle_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_ACACIA_THICK = registerBlock("outside_logfence_stripped_acacia_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK_THICK = registerBlock("outside_logfence_stripped_dark_oak_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_MANGROVE_THICK = registerBlock("outside_logfence_stripped_mangrove_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_LOGFENCE_STRIPPED_CHERRY_THICK = registerBlock("outside_logfence_stripped_cherry_thick",
+            new LogFenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+    
+    
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Statues
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    public static final Block OUTSIDE_STATUE_POKEBALL = registerBlock("outside_statue_pokeball",
+            new PokeballStatueBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_STATUE_RHYDON = registerBlock("outside_statue_rhydon",
+            new RhydonStatueBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
 
 
 

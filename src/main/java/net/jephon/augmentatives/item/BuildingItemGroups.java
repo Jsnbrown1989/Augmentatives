@@ -3,7 +3,6 @@ package net.jephon.augmentatives.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.ModBlocks;
-import net.jephon.augmentatives.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -37,6 +36,9 @@ public class BuildingItemGroups {
 
                         entries.add(ModBlocks.BUILDING_PATH_DIRTYCOBBLESTONE);
                         entries.add(ModBlocks.BUILDING_PATH_SANDYCOBBLESTONE);
+                        entries.add(ModBlocks.BUILDING_PATH_SANDYDIRT);
+                        entries.add(ModBlocks.BUILDING_PATH_SANDYGRAVEL);
+                        entries.add(ModBlocks.BUILDING_PATH_DIRTYGRAVEL);
 
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_BLACK);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_SLAB_BLUE);

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "augmentatives:block/outside/woodstack/stripped_cherry"
+    },
+    "type=double": {
+      "model": "augmentatives:block/outside/woodstack/stripped_cherry_full"
+    },
+    "type=top": {
+      "model": "augmentatives:block/outside/woodstack/stripped_cherry_top"
+    }
+  }
+}

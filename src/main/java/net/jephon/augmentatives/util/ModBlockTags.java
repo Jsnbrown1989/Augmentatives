@@ -18,6 +18,8 @@ public class ModBlockTags {
     public static final TagKey<Block> GUARDRAILS = create("guardrails");
     public static final TagKey<Block> MANHOLES  = create("manholes");
     public static final TagKey<Block> TINTABLE  = create("tintable");
+    public static final TagKey<Block> STANDARDFENCES  = create("standardfences");
+    public static final TagKey<Block> SIMPLEFENCES  = create("simplefences");
     private static TagKey<Block> create(String path) {
             return create(path, "augmentatives");
     }

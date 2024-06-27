@@ -132,7 +132,6 @@ public class AugmentativesClient implements ClientModInitializer {
                 ModBlocks.BIRCH_HEDGE,
                 ModBlocks.JUNGLE_HEDGE,
                 ModBlocks.ACACIA_HEDGE,
-                ModBlocks.AZALEA_HEDGE,
                 ModBlocks.DARK_OAK_HEDGE,
                 ModBlocks.MANGROVE_HEDGE,
                 ModBlocks.SPRUCE_HEDGE,
@@ -140,7 +139,6 @@ public class AugmentativesClient implements ClientModInitializer {
                 ModBlocks.BIRCH_PLANTER,
                 ModBlocks.JUNGLE_PLANTER,
                 ModBlocks.ACACIA_PLANTER,
-                ModBlocks.AZALEA_PLANTER,
                 ModBlocks.DARK_OAK_PLANTER,
                 ModBlocks.MANGROVE_PLANTER,
                 ModBlocks.SPRUCE_PLANTER);

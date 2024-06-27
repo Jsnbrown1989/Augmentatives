@@ -74,6 +74,58 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OUTSIDE_MANHOLE_TUNNEL)
         ;
 
+        //Standard Fences
+        getOrCreateTagBuilder(ModBlockTags.STANDARDFENCES)
+                .add(ModBlocks.OUTSIDE_FENCE_OAK)
+                .add(ModBlocks.OUTSIDE_FENCE_ACACIA)
+                .add(ModBlocks.OUTSIDE_FENCE_MANGROVE)
+                .add(ModBlocks.OUTSIDE_FENCE_CHERRY)
+                .add(ModBlocks.OUTSIDE_FENCE_DARK_OAK)
+                .add(ModBlocks.OUTSIDE_FENCE_SPRUCE)
+                .add(ModBlocks.OUTSIDE_FENCE_JUNGLE)
+                .add(ModBlocks.OUTSIDE_FENCE_BIRCH)
+        ;
+
+
+        //Simple Fences
+        getOrCreateTagBuilder(ModBlockTags.SIMPLEFENCES)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_OAK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_ACACIA)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_MANGROVE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_CHERRY)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_DARK_OAK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_SPRUCE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_JUNGLE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_BIRCH)
+
+                .add(ModBlocks.OUTSIDE_LOGFENCE_OAK_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_ACACIA_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_MANGROVE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_CHERRY_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_DARK_OAK_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_SPRUCE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_JUNGLE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_BIRCH_THICK)
+
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_OAK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_ACACIA)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_MANGROVE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_CHERRY)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_SPRUCE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_JUNGLE)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_BIRCH)
+
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_OAK_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_ACACIA_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_MANGROVE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_CHERRY_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_DARK_OAK_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_SPRUCE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_JUNGLE_THICK)
+                .add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_BIRCH_THICK)
+                ;
+
         //Tintables
         getOrCreateTagBuilder(ModBlockTags.TINTABLE)
                 .add(ModBlocks.OAK_HEDGE)
