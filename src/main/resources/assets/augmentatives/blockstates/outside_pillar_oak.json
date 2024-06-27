@@ -1,0 +1,16 @@
+{
+  "variants":{
+    "Up=false,Down=false":{
+      "model":"augmentatives:block/outside/pillar/oak_single"
+    },
+    "Up=false,Down=true":{
+      "model":"augmentatives:block/outside/pillar/oak_top"
+    },
+    "Up=true,Down=true":{
+      "model":"augmentatives:block/outside/pillar/oak_column"
+    },
+    "Up=true,Down=false":{
+      "model":"augmentatives:block/outside/pillar/oak_bottom"
+    }
+  }
+}

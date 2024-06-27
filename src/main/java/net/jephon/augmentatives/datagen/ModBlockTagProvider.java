@@ -86,7 +86,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OUTSIDE_FENCE_BIRCH)
         ;
 
-
+        //Complex Pillars
+        getOrCreateTagBuilder(ModBlockTags.COMPLEXPILLAR)
+                .add(ModBlocks.OUTSIDE_PILLAR_OAK)
+                .add(ModBlocks.OUTSIDE_PILLAR_ACACIA)
+                .add(ModBlocks.OUTSIDE_PILLAR_MANGROVE)
+                .add(ModBlocks.OUTSIDE_PILLAR_CHERRY)
+                .add(ModBlocks.OUTSIDE_PILLAR_DARK_OAK)
+                .add(ModBlocks.OUTSIDE_PILLAR_SPRUCE)
+                .add(ModBlocks.OUTSIDE_PILLAR_JUNGLE)
+                .add(ModBlocks.OUTSIDE_PILLAR_BIRCH)
+        ;
+        
+        
         //Simple Fences
         getOrCreateTagBuilder(ModBlockTags.SIMPLEFENCES)
                 .add(ModBlocks.OUTSIDE_LOGFENCE_OAK)

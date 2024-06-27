@@ -3085,6 +3085,29 @@ public class ModBlocks {
 
 
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    // Pillar Blocks
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    public static final Block OUTSIDE_PILLAR_OAK = registerBlock("outside_pillar_oak",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_SPRUCE = registerBlock("outside_pillar_spruce",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_BIRCH = registerBlock("outside_pillar_birch",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_JUNGLE = registerBlock("outside_pillar_jungle",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_ACACIA = registerBlock("outside_pillar_acacia",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_DARK_OAK = registerBlock("outside_pillar_dark_oak",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_MANGROVE = registerBlock("outside_pillar_mangrove",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+    public static final Block OUTSIDE_PILLAR_CHERRY = registerBlock("outside_pillar_cherry",
+            new AugPillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(1f).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never)));
+
+
+
+    // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Log Fence
     // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -3199,11 +3222,6 @@ public class ModBlocks {
             new PokeCenterSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_SIGN_POKEMART = registerBlock("cobbled_sign_pokemart",
             new PokeMartSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
-    public static final Block COBBLED_SIGN_POKEMART_HORIZONAL = registerBlock("cobbled_sign_pokemart_horizonal",
-            new PokeMartHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
-    public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",
-            new PokeCenterHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
-
     public static final Block COBBLED_SIGN_POKEMART_HORIZONAL = registerBlock("cobbled_sign_pokemart_horizonal",
             new PokeMartHorizonalSign(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).nonOpaque().blockVision(Blocks::never).solidBlock(Blocks::never).sounds(BlockSoundGroup.ANVIL)));
     public static final Block COBBLED_SIGN_POKECENTER_HORIZONAL = registerBlock("cobbled_sign_pokecenter_horizonal",

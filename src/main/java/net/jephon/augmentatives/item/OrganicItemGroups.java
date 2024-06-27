@@ -22,6 +22,18 @@ public class OrganicItemGroups {
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Pillars
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_OAK);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_BIRCH);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_SPRUCE);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_JUNGLE);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_ACACIA);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_CHERRY);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_DARK_OAK);
+                        entries.add(ModBlocks.OUTSIDE_PILLAR_MANGROVE);
+                
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         // Wood Stacks
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         entries.add(ModBlocks.OUTSIDE_WOODSTACK_OAK);

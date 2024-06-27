@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "augmentatives:outside_fence_oak",
+    "augmentatives:outside_fence_acacia",
+    "augmentatives:outside_fence_mangrove",
+    "augmentatives:outside_fence_cherry",
+    "augmentatives:outside_fence_dark_oak",
+    "augmentatives:outside_fence_spruce",
+    "augmentatives:outside_fence_jungle",
+    "augmentatives:outside_fence_birch"
+  ]
+}

@@ -1,4 +1,4 @@
-// 1.20.4	2024-06-26T15:55:39.8881507	Augmentatives/Tags for minecraft:block
+// 1.20.4	2024-06-27T15:42:55.2540822	Augmentatives/Tags for minecraft:block
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\augmentatives\tags\blocks\counter_drawers.json
 1ebfe24909d050321532ad5b68ea7e585c2d7dbb data\augmentatives\tags\blocks\tintable.json
 8ad57171eab471a55a1aa03e3325fcac42fbd45e data\augmentatives\tags\blocks\counters.json
@@ -9,6 +9,7 @@
 b354e0fb62b0862c1d293b6a65dfb54553ec535b data\augmentatives\tags\blocks\beach_chairs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\augmentatives\tags\blocks\counter_glass_doors.json
 d1d3cf64bbf51c2a69520564c671947cee8b4cf6 data\augmentatives\tags\blocks\simplefences.json
+cd2a73d01a2ec2bb817f292f8c68789f1f624383 data\augmentatives\tags\blocks\complexpillar.json
 1d27cbde42c4a6afb83f329a927b3919e6fff921 data\augmentatives\tags\blocks\standardfences.json
 612c05acb562133cf3368a266c6bd9ddf45fa279 data\augmentatives\tags\blocks\climbable.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\augmentatives\tags\blocks\counter_doors.json
