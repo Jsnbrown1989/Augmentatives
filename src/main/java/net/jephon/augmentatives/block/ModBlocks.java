@@ -1,7 +1,6 @@
 package net.jephon.augmentatives.block;
 
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jephon.augmentatives.Augmentatives;
 import net.jephon.augmentatives.block.building.*;
@@ -3248,12 +3247,12 @@ public class ModBlocks {
     }
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(Augmentatives.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Augmentatives.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(Augmentatives.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(Augmentatives.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerModBlocks() {

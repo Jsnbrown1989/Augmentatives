@@ -8,12 +8,12 @@ import net.jephon.augmentatives.block.ModBlocks;
 import net.jephon.augmentatives.entity.SeatEntity;
 import net.jephon.augmentatives.util.ModSit;
 import net.minecraft.client.color.world.BiomeColors;
-import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.FoliageColors;
 
 public class AugmentativesClient implements ClientModInitializer {
     @Override

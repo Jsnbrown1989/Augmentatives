@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class OrganicItemGroups {
     public static final ItemGroup ORGANICS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "organics_itemgroup"),
+            Identifier.of(Augmentatives.MOD_ID, "organics_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.organicsAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OAK_HEDGE)).entries((displayContext, entries) -> {
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

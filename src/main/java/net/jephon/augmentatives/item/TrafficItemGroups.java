@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class TrafficItemGroups {
     public static final ItemGroup TRAFFIC_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "outside_traffic_itemgroup"),
+            Identifier.of(Augmentatives.MOD_ID, "outside_traffic_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.trafficAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OUTSIDE_ASPHALT_BLACK_DOUBLE_YELLOW)).entries((displayContext, entries) -> {
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

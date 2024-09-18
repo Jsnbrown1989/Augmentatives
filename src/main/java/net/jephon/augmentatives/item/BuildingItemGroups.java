@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class BuildingItemGroups {
     public static final ItemGroup BUILDING_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "building_itemgroup"),
+            Identifier.of(Augmentatives.MOD_ID, "building_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.buildingAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OUTSIDE_ASPHALT_BLACK)).entries((displayContext, entries) -> {
 

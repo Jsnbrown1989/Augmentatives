@@ -54,7 +54,6 @@ public class GuardRailBlock
         return this.getOutlineShape(state, world, pos, context);
     }
 
-    @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
     }

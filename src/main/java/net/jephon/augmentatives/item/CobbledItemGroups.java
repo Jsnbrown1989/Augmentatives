@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class CobbledItemGroups {
     public static final ItemGroup COBBLED_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "cobbled_itemgroup"),
+            Identifier.of(Augmentatives.MOD_ID, "cobbled_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.cobbledAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.COBBLED_SIGN_POKEMART)).entries((displayContext, entries) -> {
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //

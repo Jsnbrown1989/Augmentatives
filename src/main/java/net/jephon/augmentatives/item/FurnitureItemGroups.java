@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class FurnitureItemGroups {
     public static final ItemGroup FURNITURE_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Augmentatives.MOD_ID, "furniture_itemgroup"),
+            Identifier.of(Augmentatives.MOD_ID, "furniture_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.furnitureAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OUTSIDE_BEACHCHAIR_DARK_OAK)).entries((displayContext, entries) -> {
 
