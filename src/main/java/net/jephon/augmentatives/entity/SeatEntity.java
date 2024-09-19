@@ -5,10 +5,10 @@ import net.jephon.augmentatives.util.ModSit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.listener.ClientPlayPacketListener;
-import net.minecraft.network.packet.Packet;
+import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -19,14 +19,17 @@ import java.util.HashMap;
 public class SeatEntity extends Entity {
 
     public static final HashMap<Vec3d, BlockPos> OCCUPIED = new HashMap<>();
-    @Override
-    public Packet<ClientPlayPacketListener> createSpawnPacket()
-    {
-        return new EntitySpawnS2CPacket(this);
-    }
+    private RegistryByteBuf buf;
+
+    public EntitySpawnS2CPacket packet = EntitySpawnS2CPacket.CODEC.decode(buf);
     public SeatEntity(EntityType<? extends Entity> type, World world)
     {
         super(ModSit.SEAT, world);
+    }
+
+    @Override
+    protected void initDataTracker(DataTracker.Builder builder) {
+
     }
 
     public SeatEntity(World world)
@@ -67,7 +70,7 @@ public class SeatEntity extends Entity {
         super.remove(reason);
     }
 
-    @Override
+
     protected void initDataTracker() {}
 
     @Override

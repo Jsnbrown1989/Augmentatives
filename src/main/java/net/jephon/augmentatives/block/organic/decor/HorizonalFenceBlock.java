@@ -58,7 +58,7 @@ public class HorizonalFenceBlock
     private boolean canConnectToFence(BlockState state) {
         return state.isIn(ModBlockTags.STANDARDFENCES);
     }
-    @Override
+
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (world.isClient) {
             ItemStack itemStack = player.getStackInHand(hand);

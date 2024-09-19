@@ -15,16 +15,6 @@ public class TrafficItemGroups {
             Identifier.of(Augmentatives.MOD_ID, "outside_traffic_itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.trafficAugmentatives"))
                     .icon(() -> new ItemStack(ModBlocks.OUTSIDE_ASPHALT_BLACK_DOUBLE_YELLOW)).entries((displayContext, entries) -> {
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
-                        //                                                                                                             //
-                        //                                               Paint Bucket                                                  //
-                        //                                                                                                             //
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
-
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        // Paint Bucket
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        entries.add(ModBlocks.OUTSIDE_BUCKET_PAINT);
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
                         //                                                                                                             //

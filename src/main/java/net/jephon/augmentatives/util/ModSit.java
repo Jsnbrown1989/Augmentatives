@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 import static net.jephon.augmentatives.entity.SeatEntity.OCCUPIED;
 
 public class ModSit {
-    public static final EntityType<SeatEntity> SEAT = Registry.register(Registries.ENTITY_TYPE, new Identifier(Augmentatives.MOD_ID, "seat"),
+    public static final EntityType<SeatEntity> SEAT = Registry.register(Registries.ENTITY_TYPE, Identifier.of(Augmentatives.MOD_ID, "seat"),
             FabricEntityTypeBuilder.<SeatEntity>create(SpawnGroup.MISC, SeatEntity::new).dimensions(EntityDimensions.fixed(0.001F, 0.001F))
                     .build());
 

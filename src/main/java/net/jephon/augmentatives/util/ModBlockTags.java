@@ -25,7 +25,7 @@ public class ModBlockTags {
             return create(path, "augmentatives");
     }
     private static TagKey<Block> create(String path, String namespace) {
-        return TagKey.of(Registries.BLOCK.getKey(), new Identifier(namespace, path));
+        return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(namespace, path));
 
     }
 }

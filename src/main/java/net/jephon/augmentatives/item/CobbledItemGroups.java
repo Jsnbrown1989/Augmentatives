@@ -31,6 +31,12 @@ public class CobbledItemGroups {
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                         entries.add(ModBlocks.COBBLED_SIGN_POKEMART);
                         entries.add(ModBlocks.COBBLED_SIGN_POKEMART_HORIZONAL);
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        // Statues
+                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                        entries.add(ModBlocks.OUTSIDE_STATUE_POKEBALL);
+                        entries.add(ModBlocks.OUTSIDE_STATUE_RHYDON);
+
 
 
                         // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
@@ -44,6 +50,14 @@ public class CobbledItemGroups {
                         entries.add(ModBlocks.COBBLED_UNOWN_GRANITE_A);
                         entries.add(ModBlocks.COBBLED_UNOWN_GRANITE_B);
                         entries.add(ModBlocks.COBBLED_UNOWN_GRANITE_C);
+
+                        entries.add(ModBlocks.COBBLED_UNOWN_DIORITE_A);
+                        entries.add(ModBlocks.COBBLED_UNOWN_DIORITE_B);
+                        entries.add(ModBlocks.COBBLED_UNOWN_DIORITE_C);
+
+                        entries.add(ModBlocks.COBBLED_UNOWN_ANDESITE_A);
+                        entries.add(ModBlocks.COBBLED_UNOWN_ANDESITE_B);
+                        entries.add(ModBlocks.COBBLED_UNOWN_ANDESITE_C);
 
                     }).build());
     public static void registerItemGroups() {

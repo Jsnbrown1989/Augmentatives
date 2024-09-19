@@ -6,7 +6,6 @@ import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ConnectingBlock;
-import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.BlockRotation;
@@ -58,16 +57,6 @@ public abstract class AugVerticalConnectingBlock
         return voxelShapes;
     }
 
-
-    @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return this.boundingShapes[this.getShapeIndex(state)];
-    }
-
-    @Override
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return this.collisionShapes[this.getShapeIndex(state)];
-    }
 
     private static int getDirectionMask(Direction dir) {
         return 1 << dir.getHorizontal();
