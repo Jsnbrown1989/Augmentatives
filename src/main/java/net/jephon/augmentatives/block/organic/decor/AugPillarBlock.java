@@ -1,7 +1,7 @@
 package net.jephon.augmentatives.block.organic.decor;
 
 import com.mojang.serialization.MapCodec;
-import net.jephon.augmentatives.block.common.AugVerticalConnectingBlock;
+import net.jephon.augmentatives.block.common.GenericVerticalConnectingBlock;
 import net.jephon.augmentatives.util.ModBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
 public class AugPillarBlock
-        extends AugVerticalConnectingBlock {
+        extends GenericVerticalConnectingBlock {
     public static final MapCodec<AugPillarBlock> CODEC = AugPillarBlock.createCodec(AugPillarBlock::new);
 
 

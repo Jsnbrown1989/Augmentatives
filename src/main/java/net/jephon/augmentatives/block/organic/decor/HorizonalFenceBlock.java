@@ -1,7 +1,7 @@
 package net.jephon.augmentatives.block.organic.decor;
 
 import com.mojang.serialization.MapCodec;
-import net.jephon.augmentatives.block.common.AugHorizontalConnectingBlock;
+import net.jephon.augmentatives.block.common.GenericHorizonalConnectingBlock;
 import net.jephon.augmentatives.util.ModBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -25,7 +25,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
 public class HorizonalFenceBlock
-        extends AugHorizontalConnectingBlock {
+        extends GenericHorizonalConnectingBlock {
     public static final MapCodec<HorizonalFenceBlock> CODEC = HorizonalFenceBlock.createCodec(HorizonalFenceBlock::new);
     private final VoxelShape[] cullingShapes;
 

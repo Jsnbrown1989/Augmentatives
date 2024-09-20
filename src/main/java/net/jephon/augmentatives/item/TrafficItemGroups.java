@@ -1066,20 +1066,7 @@ public class TrafficItemGroups {
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_YELLOW);
                         entries.add(ModBlocks.OUTSIDE_ASPHALT_BRICKS_MOSSY_YELLOW_SINGLE_WHITE_THICK);
 
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        // Decor
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        entries.add(ModBlocks.OUTSIDE_STREETLIGHT);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_STOP);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFICLIGHTAHEAD);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_SPEEDLIMIT);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_TOWN);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_GUARD_RAIL_CAUTION);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_CONE);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_BARREL);
-                        entries.add(ModBlocks.OUTSIDE_SIGN_TRAFFIC_LIGHT);
-                        entries.add(ModBlocks.OUTSIDE_MANHOLE_COVER);
-                        entries.add(ModBlocks.OUTSIDE_MANHOLE_TUNNEL);
+
 
                     }).build());
     public static void registerItemGroups() {

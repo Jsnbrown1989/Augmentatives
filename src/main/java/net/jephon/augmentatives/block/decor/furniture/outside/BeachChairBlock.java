@@ -1,7 +1,7 @@
 package net.jephon.augmentatives.block.decor.furniture.outside;
 
 
-import net.jephon.augmentatives.block.common.ChairBlock;
+import net.jephon.augmentatives.block.decor.ChairBlock;
 import net.jephon.augmentatives.util.BeachChairPosition;
 import net.jephon.augmentatives.util.Colorizer;
 import net.minecraft.block.*;
@@ -16,7 +16,6 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -25,11 +24,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.event.GameEvent;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Optional;
 
 import static net.jephon.augmentatives.util.Colorizer.*;
 

@@ -2,21 +2,21 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"42": "augmentatives:block/outside/asphalt/bricks_mossy",
-		"54": "augmentatives:block/outside/asphalt/bricks_mossy_single_white_thick",
-		"particle": "augmentatives:block/outside/asphalt/bottom"
+		"1": "augmentatives:block/outside/asphalt/bricks_mossy_single_white_thick",
+		"6": "augmentatives:block/outside/asphalt/bricks_mossy",
+		"particle": "augmentatives:block/outside/asphalt/bricks_mossy_single_white_thick"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [12, 0, 16, 4], "texture": "#42"},
-				"east": {"uv": [12, 0, 16, 4], "texture": "#42"},
-				"south": {"uv": [12, 0, 16, 4], "texture": "#42"},
-				"west": {"uv": [12, 0, 16, 4], "texture": "#42"},
-				"up": {"uv": [12, 0, 16, 4], "texture": "#54"},
-				"down": {"uv": [12, 0, 16, 4], "texture": "#42"}
+				"north": {"uv": [12, 0, 16, 4], "texture": "#6"},
+				"east": {"uv": [12, 0, 16, 4], "texture": "#6"},
+				"south": {"uv": [12, 0, 16, 4], "texture": "#6"},
+				"west": {"uv": [12, 0, 16, 4], "texture": "#6"},
+				"up": {"uv": [12, 0, 16, 4], "texture": "#1"},
+				"down": {"uv": [12, 0, 16, 4], "texture": "#6"}
 			}
 		}
 	],

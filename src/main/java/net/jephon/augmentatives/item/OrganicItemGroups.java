@@ -128,11 +128,6 @@ public class OrganicItemGroups {
                         entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_JUNGLE_THICK);
                         entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_CHERRY_THICK);
                         entries.add(ModBlocks.OUTSIDE_LOGFENCE_STRIPPED_MANGROVE_THICK);
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        // Statues
-                        // =-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                        entries.add(ModBlocks.OUTSIDE_STATUE_POKEBALL);
-                        entries.add(ModBlocks.OUTSIDE_STATUE_RHYDON);
                         
                     }).build());
     public static void registerItemGroups() {

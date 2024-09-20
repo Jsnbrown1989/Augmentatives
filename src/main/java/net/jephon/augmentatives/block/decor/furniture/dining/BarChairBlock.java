@@ -1,6 +1,6 @@
 package net.jephon.augmentatives.block.decor.furniture.dining;
 
-import net.jephon.augmentatives.block.common.ChairBlock;
+import net.jephon.augmentatives.block.decor.ChairBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
